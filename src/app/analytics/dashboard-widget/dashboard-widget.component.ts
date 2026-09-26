@@ -318,11 +318,11 @@ export class DashboardWidgetComponent implements AfterViewInit, OnChanges, OnDes
           </div>
           <div class="tooltip-row">
             <span class="tooltip-label">${savingsPortfolioLabel}:</span>
-            <span class="tooltip-value">$${savingsVal}</span>
+            <span class="tooltip-value">UGX ${savingsVal}</span>
           </div>
           <div class="tooltip-row">
             <span class="tooltip-label">${amountCollectedLabel}:</span>
-            <span class="tooltip-value">$${collectedVal}</span>
+            <span class="tooltip-value">UGX ${collectedVal}</span>
           </div>
         </div>
       `;
@@ -480,17 +480,21 @@ export class DashboardWidgetComponent implements AfterViewInit, OnChanges, OnDes
     return 'flat';
   }
 
+  // Butagasi Sacco operates in Uganda Shillings only
   private formatCurrency(value: number): string {
     const abs = Math.abs(value);
     const sign = value < 0 ? '-' : '';
 
+    if (abs >= 1_000_000_000) {
+      return `${sign}UGX ${(abs / 1_000_000_000).toFixed(1)}B`;
+    }
     if (abs >= 1_000_000) {
-      return `${sign}$${(abs / 1_000_000).toFixed(1)}M`;
+      return `${sign}UGX ${(abs / 1_000_000).toFixed(1)}M`;
     }
     if (abs >= 1_000) {
-      return `${sign}$${(abs / 1_000).toFixed(1)}K`;
+      return `${sign}UGX ${(abs / 1_000).toFixed(1)}K`;
     }
-    return `${sign}$${abs.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+    return `${sign}UGX ${abs.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
   }
 
   private renderChart(): void {

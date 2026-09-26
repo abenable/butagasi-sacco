@@ -171,21 +171,6 @@ export const GLOBAL_ANALYTICS_DASHBOARD: AnalyticsDashboardDefinition = {
       }
     },
     {
-      id: 'loan-portfolio-distribution',
-      titleKey: 'labels.text.Loan Portfolio Distribution',
-      type: 'chart',
-      layout: 'one-third',
-      adapter: 'loan-portfolio-distribution',
-      chartType: 'doughnut',
-      icon: 'chart-pie',
-      visibleTo: {
-        permissionsAny: [
-          'READ_REPORT',
-          'ALL_FUNCTIONS'
-        ]
-      }
-    },
-    {
       id: 'savings-growth-trends',
       titleKey: 'labels.text.Savings Growth',
       type: 'chart',
@@ -223,20 +208,6 @@ export const GLOBAL_ANALYTICS_DASHBOARD: AnalyticsDashboardDefinition = {
       adapter: 'new-client-onboarding-trends',
       chartType: 'line',
       icon: 'user-plus',
-      visibleTo: {
-        permissionsAny: [
-          'READ_REPORT',
-          'ALL_FUNCTIONS'
-        ]
-      }
-    },
-    {
-      id: 'georeference-map',
-      titleKey: 'labels.text.Georeference Map',
-      type: 'chart',
-      layout: 'wide',
-      adapter: 'georeference-map',
-      icon: 'globe',
       visibleTo: {
         permissionsAny: [
           'READ_REPORT',

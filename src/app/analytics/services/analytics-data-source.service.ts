@@ -21,18 +21,6 @@ import {
   AnalyticsWidgetState
 } from '../models/analytics-dashboard.model';
 
-const METRIC_TREND_FALLBACKS: Record<string, { percent: number; positive: boolean }> = {
-  'clients-total': { percent: 2.89, positive: true },
-  'loans-total': { percent: 1.99, positive: true },
-  'collection-total': { percent: 4.12, positive: true },
-  'disbursement-total': { percent: 1.25, positive: false },
-  'savings-total': { percent: 4.32, positive: true },
-  'women-borrowers-total': { percent: 0.95, positive: true },
-  'rural-clients-total': { percent: 1.87, positive: true },
-  'youth-clients-total': { percent: 2.45, positive: true },
-  'average-loan-size-total': { percent: 3.21, positive: true }
-};
-
 @Injectable({
   providedIn: 'root'
 })
@@ -44,10 +32,6 @@ export class AnalyticsDataSourceService {
   ): { trendPercent?: number; trendPositive?: boolean } {
     if (actualPercent !== undefined && !Number.isNaN(actualPercent)) {
       return { trendPercent: actualPercent, trendPositive: actualPositive };
-    }
-    const fallback = METRIC_TREND_FALLBACKS[widgetId];
-    if (fallback) {
-      return { trendPercent: fallback.percent, trendPositive: fallback.positive };
     }
     return {};
   }
@@ -86,12 +70,8 @@ export class AnalyticsDataSourceService {
         return this.loadSavingsGrowthChart(filters);
       case 'portfolio-growth-by-group':
         return this.loadPortfolioGrowthByGroup(filters);
-      case 'loan-portfolio-distribution':
-        return this.loadLoanPortfolioDistribution(filters);
       case 'new-client-onboarding-trends':
         return this.loadNewClientOnboardingTrends(filters);
-      case 'georeference-map':
-        return this.loadGeoreferenceMapData(filters);
       default:
         return of({
           loading: false,
@@ -124,19 +104,6 @@ export class AnalyticsDataSourceService {
           actualPercent,
           actualPositive
         );
-        if (total === 0) {
-          // Fallback when API returns empty data
-          const fallbackValue =
-            type === 'client' ? Math.floor(Math.random() * 20) + 5 : Math.floor(Math.random() * 15) + 3;
-          return {
-            loading: false,
-            empty: false,
-            metricValue: fallbackValue,
-            trendPercent: trend.trendPercent,
-            trendPositive: trend.trendPositive,
-            contextKey: this.getTimescaleKey(filters.timescale)
-          };
-        }
         return {
           loading: false,
           empty: false,
@@ -146,19 +113,7 @@ export class AnalyticsDataSourceService {
           contextKey: this.getTimescaleKey(filters.timescale)
         };
       }),
-      catchError(() => {
-        const trend = this.getMetricTrend(type === 'client' ? 'clients-total' : 'loans-total');
-        const fallbackValue =
-          type === 'client' ? Math.floor(Math.random() * 20) + 5 : Math.floor(Math.random() * 15) + 3;
-        return of({
-          loading: false,
-          empty: false,
-          metricValue: fallbackValue,
-          trendPercent: trend.trendPercent,
-          trendPositive: trend.trendPositive,
-          contextKey: this.getTimescaleKey(filters.timescale)
-        });
-      })
+      catchError(() => of({ loading: false, empty: true }))
     );
   }
 
@@ -173,20 +128,6 @@ export class AnalyticsDataSourceService {
         const net = complete - pending;
         const pctDiff = pending > 0 ? ((complete - pending) / pending) * 100 : undefined;
         const trend = this.getMetricTrend(widgetId, pctDiff !== undefined ? Math.abs(pctDiff) : undefined, net >= 0);
-        if (pending === 0 && complete === 0) {
-          // Fallback when API returns empty data
-          const fallbackValue =
-            reportName === 'Demand Vs Collection'
-              ? -(Math.floor(Math.random() * 300000) + 50000)
-              : Math.floor(Math.random() * 60000) + 10000;
-          return {
-            loading: false,
-            empty: false,
-            metricValue: fallbackValue,
-            trendPercent: trend.trendPercent,
-            trendPositive: trend.trendPositive
-          };
-        }
         return {
           loading: false,
           empty: false,
@@ -195,20 +136,7 @@ export class AnalyticsDataSourceService {
           trendPositive: trend.trendPositive
         };
       }),
-      catchError(() => {
-        const trend = this.getMetricTrend(widgetId);
-        const fallbackValue =
-          reportName === 'Demand Vs Collection'
-            ? -(Math.floor(Math.random() * 300000) + 50000)
-            : Math.floor(Math.random() * 60000) + 10000;
-        return of({
-          loading: false,
-          empty: false,
-          metricValue: fallbackValue,
-          trendPercent: trend.trendPercent,
-          trendPositive: trend.trendPositive
-        });
-      })
+      catchError(() => of({ loading: false, empty: true }))
     );
   }
 
@@ -232,16 +160,7 @@ export class AnalyticsDataSourceService {
           trendPositive: trend.trendPositive
         };
       }),
-      catchError(() => {
-        const trend = this.getMetricTrend('savings-total');
-        return of({
-          loading: false,
-          empty: false,
-          metricValue: Math.floor(Math.random() * 50000) + 10000,
-          trendPercent: trend.trendPercent,
-          trendPositive: trend.trendPositive
-        });
-      })
+      catchError(() => of({ loading: false, empty: true }))
     );
   }
 
@@ -270,16 +189,7 @@ export class AnalyticsDataSourceService {
           trendPositive: trend.trendPositive
         };
       }),
-      catchError(() => {
-        const trend = this.getMetricTrend('women-borrowers-total'); // fallback mock trend
-        return of({
-          loading: false,
-          empty: false,
-          metricValue: Math.floor(Math.random() * 1000) + 100,
-          trendPercent: trend.trendPercent,
-          trendPositive: trend.trendPositive
-        });
-      })
+      catchError(() => of({ loading: false, empty: true }))
     );
   }
 
@@ -303,55 +213,8 @@ export class AnalyticsDataSourceService {
           trendPositive: trend.trendPositive
         };
       }),
-      catchError(() => {
-        const trend = this.getMetricTrend('average-loan-size-total');
-        return of({
-          loading: false,
-          empty: false,
-          metricValue: Math.floor(Math.random() * 5000) + 1000,
-          trendPercent: trend.trendPercent,
-          trendPositive: trend.trendPositive
-        });
-      })
+      catchError(() => of({ loading: false, empty: true }))
     );
-  }
-
-  private buildTrendChartFallback(filters: AnalyticsFilters): AnalyticsWidgetState {
-    const labels = this.getTimescaleLabels(filters.timescale);
-    const clients = labels.map(() => Math.floor(Math.random() * 50000) + 10000);
-    const loans = labels.map(() => Math.floor(Math.random() * 50000) + 10000);
-    return {
-      loading: false,
-      empty: false,
-      labels,
-      translateLabels: false,
-      datasets: [
-        {
-          labelKey: 'labels.inputs.Clients',
-          data: clients,
-          backgroundColor: '#1565c0',
-          borderColor: '#1565c0',
-          borderWidth: 1
-        },
-        {
-          labelKey: 'labels.menus.Loans',
-          data: loans,
-          backgroundColor: '#2e7d32',
-          borderColor: '#2e7d32',
-          borderWidth: 1
-        }
-      ],
-      details: [
-        {
-          labelKey: 'labels.inputs.Clients',
-          value: clients.reduce((sum, value) => sum + value, 0)
-        },
-        {
-          labelKey: 'labels.menus.Loans',
-          value: loans.reduce((sum, value) => sum + value, 0)
-        }
-      ]
-    };
   }
 
   private loadTrendChart(filters: AnalyticsFilters): Observable<AnalyticsWidgetState> {
@@ -364,10 +227,6 @@ export class AnalyticsDataSourceService {
           clients,
           loans
         ]) => {
-          // If API returned all zeros, use fallback mock data
-          if (clients.every((value) => value === 0) && loans.every((value) => value === 0)) {
-            return this.buildTrendChartFallback(filters);
-          }
           return {
             loading: false,
             empty: false,
@@ -402,7 +261,7 @@ export class AnalyticsDataSourceService {
           };
         }
       ),
-      catchError(() => of(this.buildTrendChartFallback(filters)))
+      catchError(() => of({ loading: false, empty: true }))
     );
   }
 
@@ -417,19 +276,11 @@ export class AnalyticsDataSourceService {
           pending,
           complete
         ] = this.extractAmountPair(response, reportName);
-        let pendingAmount = Math.max(0, pending);
-        let completeAmount = Math.max(0, complete);
-        if (pendingAmount === 0 && completeAmount === 0) {
-          // Fallback when API returns empty data
-          pendingAmount = Math.floor(Math.random() * 5000) + 1000;
-          completeAmount = Math.floor(Math.random() * 50000) + 10000;
-        }
-        if (pendingAmount === 0 && completeAmount > 0) {
-          pendingAmount = Math.floor(completeAmount * 0.15); // Force some pending for demo design
-        }
+        const pendingAmount = Math.max(0, pending);
+        const completeAmount = Math.max(0, complete);
         return {
           loading: false,
-          empty: false,
+          empty: pendingAmount === 0 && completeAmount === 0,
           labels: [
             'labels.status.Pending',
             completeLabelKey
@@ -462,44 +313,7 @@ export class AnalyticsDataSourceService {
           ]
         };
       }),
-      catchError(() => {
-        const pendingAmount = Math.floor(Math.random() * 50000) + 10000;
-        const completeAmount = Math.floor(Math.random() * 50000) + 10000;
-        return of({
-          loading: false,
-          empty: false,
-          labels: [
-            'labels.status.Pending',
-            completeLabelKey
-          ],
-          translateLabels: true,
-          datasets: [
-            {
-              labelKey: completeLabelKey,
-              data: [
-                pendingAmount,
-                completeAmount
-              ],
-              backgroundColor: [
-                '#29b6f6',
-                '#ef5350'
-              ],
-              borderWidth: 1,
-              borderColor: '#ffffff'
-            }
-          ],
-          details: [
-            {
-              labelKey: 'labels.status.Pending',
-              value: pendingAmount
-            },
-            {
-              labelKey: completeLabelKey,
-              value: completeAmount
-            }
-          ]
-        });
-      })
+      catchError(() => of({ loading: false, empty: true }))
     );
   }
 
@@ -539,31 +353,7 @@ export class AnalyticsDataSourceService {
           ]
         };
       }),
-      catchError(() => {
-        const labels = this.getTimescaleLabels(filters.timescale);
-        const data = labels.map(() => Math.floor(Math.random() * 50000) + 10000);
-        return of({
-          loading: false,
-          empty: false,
-          labels,
-          translateLabels: false,
-          datasets: [
-            {
-              labelKey: 'labels.menus.Savings',
-              data,
-              backgroundColor: 'rgba(56, 142, 60, 0.15)',
-              borderColor: '#388e3c',
-              borderWidth: 2
-            }
-          ],
-          details: [
-            {
-              labelKey: 'labels.menus.Savings',
-              value: data.reduce((sum, v) => sum + v, 0)
-            }
-          ]
-        });
-      })
+      catchError(() => of({ loading: false, empty: true }))
     );
   }
 
@@ -622,125 +412,10 @@ export class AnalyticsDataSourceService {
           details: [] as AnalyticsDetailItem[]
         };
       }),
-      catchError(() => {
-        const labels = this.getTimescaleLabels(filters.timescale);
-        const activeBorrowers = labels.map((_, i) => 50000 + i * 50000 + Math.floor(Math.random() * 20000));
-        const activeSavers = labels.map((_, i) => 60000 + i * 40000 + Math.floor(Math.random() * 20000));
-        const portfolioAtRisk = labels.map((_, i) => 70000 + i * 20000 + Math.floor(Math.random() * 20000));
-        const activeClient = labels.map((_, i) => 40000 + i * 25000 + Math.floor(Math.random() * 20000));
-        const portfolioGromard = labels.map((_, i) => 45000 + i * 35000 + Math.floor(Math.random() * 20000));
-        const womenBorrowers = labels.map((_, i) => 30000 + i * 20000 + Math.floor(Math.random() * 20000));
-        const ruralClients = labels.map((_, i) => 65000 + i * 30000 + Math.floor(Math.random() * 20000));
-
-        return of({
-          loading: false,
-          empty: false,
-          labels,
-          translateLabels: false,
-          datasets: [
-            {
-              labelKey: 'labels.text.Active Borrowers',
-              data: activeBorrowers,
-              backgroundColor: '#1565c0',
-              borderColor: '#1565c0',
-              borderWidth: 2
-            },
-            {
-              labelKey: 'labels.text.Active Savers',
-              data: activeSavers,
-              backgroundColor: '#388e3c',
-              borderColor: '#388e3c',
-              borderWidth: 2
-            },
-            {
-              labelKey: 'labels.text.Portfolio at Risk',
-              data: portfolioAtRisk,
-              backgroundColor: '#f57c00',
-              borderColor: '#f57c00',
-              borderWidth: 2
-            },
-            {
-              labelKey: 'labels.text.Active Client',
-              data: activeClient,
-              backgroundColor: '#29b6f6',
-              borderColor: '#29b6f6',
-              borderWidth: 2
-            },
-            {
-              labelKey: 'labels.text.Portfolio Gromard',
-              data: portfolioGromard,
-              backgroundColor: '#78909c',
-              borderColor: '#78909c',
-              borderWidth: 2
-            },
-            {
-              labelKey: 'labels.text.Women Borrowers %',
-              data: womenBorrowers,
-              backgroundColor: '#ab47bc',
-              borderColor: '#ab47bc',
-              borderWidth: 2
-            },
-            {
-              labelKey: 'labels.text.Rural Clients',
-              data: ruralClients,
-              backgroundColor: '#26a69a',
-              borderColor: '#26a69a',
-              borderWidth: 2
-            }
-          ],
-          details: [] as any[]
-        });
-      })
+      catchError(() => of({ loading: false, empty: true }))
     );
   }
 
-  private loadLoanPortfolioDistribution(filters: AnalyticsFilters): Observable<AnalyticsWidgetState> {
-    return of({
-      loading: false,
-      empty: false,
-      labels: [
-        'labels.text.Product Type',
-        'labels.text.Loan Portfolio',
-        'labels.text.Others',
-        'labels.text.Agricultural / Sectors',
-        'labels.text.Sector'
-      ],
-      translateLabels: true,
-      datasets: [
-        {
-          labelKey: 'labels.text.Loan Portfolio Distribution',
-          data: [
-            40,
-            23.3,
-            29.8,
-            10.0,
-            16.8,
-            9.8,
-            6.0,
-            12.0,
-            12.3,
-            3.3,
-            3.6
-          ],
-          backgroundColor: [
-            '#1565c0',
-            '#1e88e5',
-            '#42a5f5',
-            '#26c6da',
-            '#29b6f6',
-            '#80deea',
-            '#81c784',
-            '#8e24aa',
-            '#ab47bc',
-            '#ffa726',
-            '#ef5350'
-          ],
-          borderWidth: 1
-        }
-      ],
-      details: []
-    });
-  }
 
   private loadNewClientOnboardingTrends(filters: AnalyticsFilters): Observable<AnalyticsWidgetState> {
     return this.runReport('New Client Onboarding Report', this.buildReportParams(filters)).pipe(
@@ -776,31 +451,7 @@ export class AnalyticsDataSourceService {
           ]
         };
       }),
-      catchError(() => {
-        const labels = this.getTimescaleLabels(filters.timescale);
-        const data = labels.map(() => Math.floor(Math.random() * 100) + 10);
-        return of({
-          loading: false,
-          empty: false,
-          labels,
-          translateLabels: false,
-          datasets: [
-            {
-              labelKey: 'labels.text.New Clients',
-              data,
-              backgroundColor: 'rgba(21, 101, 192, 0.15)',
-              borderColor: '#1565c0',
-              borderWidth: 2
-            }
-          ],
-          details: [
-            {
-              labelKey: 'labels.text.New Clients',
-              value: data.reduce((sum, v) => sum + v, 0)
-            }
-          ]
-        });
-      })
+      catchError(() => of({ loading: false, empty: true }))
     );
   }
 
@@ -831,7 +482,6 @@ export class AnalyticsDataSourceService {
 
     // Note: productId is NOT sent to backend reports — most reports do not register this parameter
     // and sending it causes an "Input validation error: unknown report parameter" from the API.
-    // The Product dropdown is still reactive and maps simulated scaling inside georeference-map.
 
     // Note: clientGroupId is NOT sent — most reports do not register this parameter
     // and sending it causes an "Input validation error: unknown report parameter" from the API.
@@ -1019,191 +669,5 @@ export class AnalyticsDataSourceService {
       default:
         return 'labels.buttons.Month';
     }
-  }
-
-  private loadGeoreferenceMapData(filters: AnalyticsFilters): Observable<AnalyticsWidgetState> {
-    return this.http.get<any[]>('/offices').pipe(
-      map((offices) => {
-        const mapData = offices.map((office, index) => {
-          const coords = this.getOfficeCoordinates(office.name, index);
-          const clients = this.getOfficeClients(office.id, filters);
-          const loans = this.getOfficeLoans(office.id, filters);
-          const savings = this.getOfficeSavings(office.id, filters);
-          const collected = this.getOfficeCollected(office.id, filters);
-
-          return {
-            officeId: office.id,
-            officeName: office.name,
-            latitude: coords.lat,
-            longitude: coords.lng,
-            country: coords.country,
-            clients,
-            loans,
-            savings,
-            collected
-          };
-        });
-
-        return {
-          loading: false,
-          empty: mapData.length === 0,
-          mapData
-        };
-      }),
-      catchError(() => {
-        const mockOffices = [
-          { id: 1, name: 'Head Office' },
-          { id: 2, name: 'Nairobi Branch' },
-          { id: 3, name: 'Mombasa Branch' },
-          { id: 4, name: 'Kampala Branch' },
-          { id: 5, name: 'Lagos Branch' },
-          { id: 6, name: 'Bangalore Branch' },
-          { id: 7, name: 'Manila Branch' },
-          { id: 8, name: 'Bogota Branch' }
-        ];
-
-        const mapData = mockOffices.map((office, index) => {
-          const coords = this.getOfficeCoordinates(office.name, index);
-          const clients = this.getOfficeClients(office.id, filters);
-          const loans = this.getOfficeLoans(office.id, filters);
-          const savings = this.getOfficeSavings(office.id, filters);
-          const collected = this.getOfficeCollected(office.id, filters);
-
-          return {
-            officeId: office.id,
-            officeName: office.name,
-            latitude: coords.lat,
-            longitude: coords.lng,
-            country: coords.country,
-            clients,
-            loans,
-            savings,
-            collected
-          };
-        });
-
-        return of({
-          loading: false,
-          empty: false,
-          mapData
-        });
-      })
-    );
-  }
-
-  private getOfficeCoordinates(name: string, index: number): { lat: number; lng: number; country: string } {
-    const cleanName = name.toLowerCase().replace(/\s+/g, ' ');
-
-    if (cleanName.includes('head')) {
-      return { lat: 1.2921, lng: 36.8219, country: 'Kenya' };
-    }
-    if (cleanName.includes('paitilla')) {
-      return { lat: 8.9824, lng: -79.5199, country: 'Panama' };
-    }
-    if (cleanName.includes('kalyan')) {
-      return { lat: 13.0232, lng: 77.6431, country: 'India' };
-    }
-    if (cleanName.includes('loan')) {
-      return { lat: 0.3476, lng: 32.5825, country: 'Uganda' };
-    }
-    if (cleanName.includes('nairobi')) {
-      return { lat: -1.2833, lng: 36.8167, country: 'Kenya' };
-    }
-    if (cleanName.includes('mombasa')) {
-      return { lat: -4.0435, lng: 39.6682, country: 'Kenya' };
-    }
-    if (cleanName.includes('kisumu')) {
-      return { lat: -0.1022, lng: 34.7617, country: 'Kenya' };
-    }
-    if (cleanName.includes('nakuru')) {
-      return { lat: -0.3031, lng: 36.08, country: 'Kenya' };
-    }
-    if (cleanName.includes('kampala') || cleanName.includes('uganda')) {
-      return { lat: 0.3476, lng: 32.5825, country: 'Uganda' };
-    }
-    if (cleanName.includes('lagos') || cleanName.includes('nigeria')) {
-      return { lat: 6.5244, lng: 3.3792, country: 'Nigeria' };
-    }
-    if (cleanName.includes('bangalore') || cleanName.includes('india') || cleanName.includes('bengaluru')) {
-      return { lat: 12.9716, lng: 77.5946, country: 'India' };
-    }
-    if (cleanName.includes('manila') || cleanName.includes('philippines')) {
-      return { lat: 14.5995, lng: 120.9842, country: 'Philippines' };
-    }
-    if (cleanName.includes('bogota') || cleanName.includes('colombia')) {
-      return { lat: 4.711, lng: -74.0721, country: 'Colombia' };
-    }
-    if (cleanName.includes('lima') || cleanName.includes('peru')) {
-      return { lat: -12.0464, lng: -77.0428, country: 'Peru' };
-    }
-    if (cleanName.includes('dar es salaam') || cleanName.includes('tanzania')) {
-      return { lat: -6.7924, lng: 39.2083, country: 'Tanzania' };
-    }
-
-    // Fallback: spread unknown offices across known land regions with deterministic, ocean-safe offsets
-    const landRegions = [
-      { lat: -1.2921, lng: 36.8219, country: 'Kenya' }, // Nairobi, Kenya
-      { lat: 12.9716, lng: 77.5946, country: 'India' }, // Bangalore, India
-      { lat: 6.5244, lng: 3.3792, country: 'Nigeria' }, // Lagos, Nigeria
-      { lat: 14.5995, lng: 120.9842, country: 'Philippines' }, // Manila, Philippines
-      { lat: 4.711, lng: -74.0721, country: 'Colombia' }, // Bogota, Colombia
-      { lat: -8.8368, lng: 13.2343, country: 'Angola' }, // Luanda, Angola
-      { lat: 9.0579, lng: 7.4951, country: 'Nigeria' }, // Abuja, Nigeria
-      { lat: 0.3476, lng: 32.5825, country: 'Uganda' } // Kampala, Uganda
-    ];
-
-    const base = landRegions[index % landRegions.length];
-    // Use a tiny, bounded jitter (max ±1.5°) that stays well within land area
-    const jitterLat = (((index * 17 + 3) % 7) - 3) * 0.3;
-    const jitterLng = (((index * 23 + 5) % 7) - 3) * 0.3;
-
-    return {
-      lat: base.lat + jitterLat,
-      lng: base.lng + jitterLng,
-      country: base.country
-    };
-  }
-
-  private normalizeOfficeId(officeId: number): number {
-    const id = Math.abs(Math.floor(Number(officeId)));
-    return Number.isSafeInteger(id) && id > 0 ? id : 1;
-  }
-
-  private getOfficeClients(officeId: number, filters: AnalyticsFilters): number {
-    const safeId = this.normalizeOfficeId(officeId);
-    const base = ((safeId * 149) % 300) + 150;
-    const scale = filters.productId ? 0.25 : 1.0;
-    return Math.max(50, Math.floor(base * scale));
-  }
-
-  private getOfficeLoans(officeId: number, filters: AnalyticsFilters): number {
-    const clients = this.getOfficeClients(officeId, filters);
-    return Math.floor(clients * 0.85);
-  }
-
-  private getOfficeSavings(officeId: number, filters: AnalyticsFilters): number {
-    const clients = this.getOfficeClients(officeId, filters);
-    const safeId = this.normalizeOfficeId(officeId);
-    const basePerClient = ((safeId * 73) % 500) + 800;
-    const productScale = filters.productId ? 0.4 : 1.0;
-    return Math.floor(clients * basePerClient * productScale);
-  }
-
-  private getOfficeCollected(officeId: number, filters: AnalyticsFilters): number {
-    const loansCount = this.getOfficeLoans(officeId, filters);
-    const safeId = this.normalizeOfficeId(officeId);
-    const avgLoanSize = ((safeId * 41) % 1000) + 1500;
-    const basePortfolio = loansCount * avgLoanSize;
-
-    let periodScale = 0.08;
-    if (filters.timescale === 'Day') {
-      periodScale = 0.003;
-    } else if (filters.timescale === 'Week') {
-      periodScale = 0.02;
-    } else if (filters.timescale === 'Year') {
-      periodScale = 0.95;
-    }
-
-    return Math.floor(basePortfolio * periodScale);
   }
 }

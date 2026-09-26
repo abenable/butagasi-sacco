@@ -117,27 +117,4 @@ export class NotificationsService {
       catchError(() => of(null))
     );
   }
-
-  /**
-   * @returns {Observable<any>} Mock Unread Notifications for Testing.
-   */
-  getMockUnreadNotification(): Observable<any> {
-    const date = new Date();
-    return of({
-      totalFilteredRecords: 1,
-      pageItems: [
-        {
-          id: Math.floor(Math.random() * 100),
-          objectType: 'client',
-          objectId: Math.floor(Math.random() * 10),
-          action: 'clientCreated',
-          actorId: 2,
-          content: 'Client Created',
-          isRead: false,
-          isSystemGenerated: false,
-          createdAt: `${date.toLocaleDateString()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
-        }
-      ]
-    });
-  }
 }

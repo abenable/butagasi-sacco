@@ -85,7 +85,7 @@
       "reason": "사유"
     }
   },
-  "APP_NAME": "Mifos® X WebApp",
+  "APP_NAME": "Butagasi Sacco",
   "Logged in as": "다음 계정으로 로그인됨",
   "Remember me": "날 기억해",
   "errors": {
@@ -581,7 +581,7 @@
     "Mifos Reporting Plugin for Eclipse Birt": "Mifos Reporting Plugin for Eclipse Birt",
     "version": {
       "Tenant": "임차인",
-      "Mifos WebApp": "Mifos® WebApp",
+      "Mifos WebApp": "Butagasi Sacco",
       "Apache Fineract": "Apache Fineract®",
       "Server": "서버",
       "Username": "사용자 이름",
@@ -1401,7 +1401,7 @@
       "Assets": "자산",
       "Assets / Liability": "자산/부채",
       "Assign Payout": "지급 배정",
-      "Assign to Mifos Client": "Mifos 고객에게 배정",
+      "Assign to Mifos Client": "Butagasi Sacco 고객에게 배정",
       "Audit Trails": "감사 추적",
       "Average Gap": "평균 격차",
       "Balance": "균형",
@@ -1448,7 +1448,7 @@
       "Configure Fund Sources for Payment Channels": "지불 채널에 대한 자금 출처 구성",
       "Configure Maker Checker Tasks": "Maker Checker 작업 구성",
       "Configure Maker-Checker Tasks": "Maker-Checker 작업 구성",
-      "Configure Mifos Organization Needs": "다음 가이드 투어는 조직의 필요에 따라 Mifos®를 구성하는 데 도움이 됩니다.",
+      "Configure Mifos Organization Needs": "다음 가이드 투어는 조직의 필요에 따라 Butagasi Sacco를 구성하는 데 도움이 됩니다.",
       "Confirm Payment": "결제 확인",
       "Confirm Payout": "지급 확인",
       "Confirm Transaction Details": "거래 세부정보 확인",
@@ -1578,7 +1578,7 @@
       "Last Active": "마지막 활성",
       "Liabilities": "부채",
       "List of Users with their details": "세부 정보가 포함된 사용자 목록",
-      "List of all codes in the Mifos system": "귀하의 조직에 대한 Mifos® 시스템의 모든 코드 목록입니다.",
+      "List of all codes in the Mifos system": "귀하의 조직에 대한 Butagasi Sacco 시스템의 모든 코드 목록입니다.",
       "List of all currently available data tables": "현재 사용 가능한 모든 데이터 테이블 목록입니다.",
       "List of all currently available reports": "현재 사용 가능한 모든 보고서 목록입니다. 자세한 내용을 보려면 클릭하세요.",
       "List of all maker checker tasks": "모든 Maker Checker 작업 목록입니다. 자세한 내용을 보려면 클릭하세요.",
@@ -1841,7 +1841,7 @@
       "View Transaction": "거래 보기",
       "View Transfer": "이체 보기",
       "Waive Charge": "요금 면제",
-      "Welcome to Mifos": "Mifos®에 오신 것을 환영합니다",
+      "Welcome to Mifos": "Butagasi Sacco에 오신 것을 환영합니다",
       "Why Open Source": "왜 오픈소스인가",
       "Withdraw Money From Saving Account": "저축 계좌에서 돈을 인출하세요",
       "Withhold Tax": "원천징수세",
@@ -1862,7 +1862,7 @@
       "Shares": "주식",
       "Transaction Type": "거래 유형",
       "Category": "카테고리",
-      "Total Volume ($)": "총 거래액 ($)",
+      "Total Volume (UGX)": "총 거래액 (UGX)",
       "Trend": "추세",
       "Module": "모듈",
       "Global Financial": "글로벌 금융",
@@ -4397,7 +4397,7 @@
       "Accounting": "회계",
       "Accounting Closures": "회계 마감",
       "Accounting Rules": "회계 규칙",
-      "Accounting to journal entries": "Mifos X에서는 분개 항목에 대한 회계를 마감할 수 있습니다. 클로저는 모든 분기에 적용하거나 각 분기에 개별적으로 적용할 수 있습니다. 회계 장부에 영향을 미치는 거래를 방지하려면 조직이 정기적으로 회계를 마감하는 것이 중요합니다.",
+      "Accounting to journal entries": "Butagasi Sacco에서는 분개 항목에 대한 회계를 마감할 수 있습니다. 클로저는 모든 분기에 적용하거나 각 분기에 개별적으로 적용할 수 있습니다. 회계 장부에 영향을 미치는 거래를 방지하려면 조직이 정기적으로 회계를 마감하는 것이 중요합니다.",
       "Accounts linked to Financial Activities": "금융활동과 연계된 계정은 회계거래를 생성하는 시스템을 수행하는 데 필요한 매핑된 계정입니다.",
       "Accrues income, expenses and liabilities": "제공된 날짜에 수입, 지출 및 부채가 발생합니다.",
       "Activated": "활성화됨",
@@ -4498,7 +4498,7 @@
       "Committee": "위원회",
       "Compliant": "준수",
       "Configurations": "구성",
-      "Configurations page allows you to further customize": "구성 페이지에서는 조직이 Mifos 시스템을 사용하는 방식을 추가로 사용자 정의할 수 있습니다.",
+      "Configurations page allows you to further customize": "구성 페이지에서는 조직이 Butagasi Sacco 시스템을 사용하는 방식을 추가로 사용자 정의할 수 있습니다.",
       "Configure Maker Checker Tasks": "Maker Checker 작업 구성",
       "Copy": "복사",
       "Copy Account Number": "계좌번호 복사",
@@ -4590,7 +4590,7 @@
       "Define or modify Maker Checker tasks": "Maker Checker 작업 정의 또는 수정",
       "Define or modify entity to entity mappings": "엔터티 대 엔터티 매핑 정의 또는 수정",
       "Define or modify roles and associated permissions": "역할 및 관련 권한 정의 또는 수정",
-      "Define what currencies interactions within the Mifos X system": "이 섹션에서는 조직이 Mifos X 시스템 내 상호작용 전반에 걸쳐 어떤 통화를 사용할 것인지 정의할 수 있습니다.",
+      "Define what currencies interactions within the Mifos X system": "이 섹션에서는 조직이 Butagasi Sacco 시스템 내 상호작용 전반에 걸쳐 어떤 통화를 사용할 것인지 정의할 수 있습니다.",
       "Defines rules for taking multiple rules": "여러 규칙을 취하기 위한 규칙을 정의합니다.",
       "Delete clients signature": "정말로 이 클라이언트 서명을 삭제하시겠습니까?",
       "Delinquency Buckets": "연체 버킷",
@@ -4722,7 +4722,7 @@
       "Fund": "축적",
       "Fund Mapping": "자금 매핑",
       "Funds are associated with loans": "자금은 대출과 연결되어 있습니다",
-      "GLAccount Balances Application": "이를 통해 Mifos로 이전하려는 조직이 GL 계정 잔액(기존 회계 애플리케이션 또는 수동 시스템에서)을 Mifos X 회계로 이전하기가 더 쉬워졌습니다.",
+      "GLAccount Balances Application": "이를 통해 Butagasi Sacco로 이전하려는 조직이 GL 계정 잔액(기존 회계 애플리케이션 또는 수동 시스템에서)을 Butagasi Sacco 회계로 이전하기가 더 쉬워졌습니다.",
       "GSIM Account View": "GSIM 계정 보기",
       "Gap": "격차",
       "General": "일반적인",
@@ -4828,7 +4828,7 @@
       "Manual journal entry transactions recorded in a journal": "분개장에 기록된 수동 분개 거래",
       "Message Gateway": "메시지 게이트웨이",
       "Mifos Initiative": "Mifos® 이니셔티브",
-      "Mifos X data-tables allow the user to add custom fields": "Mifos X 데이터 테이블을 사용하면 사용자는 클라이언트 프로필, 대출/저축 계좌, 그룹, 센터 또는 사무실에 기본 제공 필드 외에 사용자 정의 필드를 추가할 수 있습니다.",
+      "Mifos X data-tables allow the user to add custom fields": "Butagasi Sacco 데이터 테이블을 사용하면 사용자는 클라이언트 프로필, 대출/저축 계좌, 그룹, 센터 또는 사무실에 기본 제공 필드 외에 사용자 정의 필드를 추가할 수 있습니다.",
       "Migrate Opening Balances": "개방 잔액을 마이그레이션합니다",
       "Mild": "경미",
       "Missing required information. Please try again.": "필수 정보가 누락되었습니다. 다시 시도하세요.",
@@ -4938,7 +4938,7 @@
       "Revert this transaction?": "이 거래를 되돌리시겠습니까?",
       "Review the transaction and recipient details below, then assign the payout.": "아래의 거래 및 수취인 세부정보를 확인한 후 지급을 배정하세요.",
       "Roles and Permissions": "역할 및 권한",
-      "Roles and Permissions allow the administrator to control access": "역할 및 권한을 통해 관리자는 사용자에게 할당된 역할과 역할에 할당된 권한에 따라 Mifos에 대한 액세스를 제어할 수 있습니다.",
+      "Roles and Permissions allow the administrator to control access": "역할 및 권한을 통해 관리자는 사용자에게 할당된 역할과 역할에 할당된 권한에 따라 Butagasi Sacco에 대한 액세스를 제어할 수 있습니다.",
       "Rows": "행",
       "S3 Amazon Service Configuration": "S3 Amazon 서비스 구성",
       "SMS": "SMS",
@@ -4960,7 +4960,7 @@
       "Scheduler Jobs can set batch jobs": "스케줄러 작업을 사용하면 일괄 작업이 정기적으로 완료되도록 설정할 수 있습니다. 이 페이지에서 작업을 예약, 수정 또는 삭제할 수 있습니다.",
       "Search": "찾다",
       "Search Journal Entry": "일지 검색",
-      "Search and assign this beneficiary to an existing Mifos client account": "이 수취인을 검색하여 기존 Mifos 고객 계정에 배정하세요",
+      "Search and assign this beneficiary to an existing Mifos client account": "이 수취인을 검색하여 기존 Butagasi Sacco 고객 계정에 배정하세요",
       "Search bar to filter fixed deposit products.": "정기예금 상품을 필터링하는 검색창입니다.",
       "Search by Text": "텍스트로 검색",
       "Search by user": "사용자가 검색하십시오",
@@ -5024,7 +5024,7 @@
       "Template I am trying to use": "제가 사용하려고 하는 템플릿입니다. 괜찮나요?",
       "Templates": "템플릿",
       "Tenant": "임차인",
-      "The Chart of Accounts - General Ledger Setup": "계정과목표 - 총계정원장 설정을 사용하면 Mifos X 내에서 다양한 계정을 구성할 수 있습니다.",
+      "The Chart of Accounts - General Ledger Setup": "계정과목표 - 총계정원장 설정을 사용하면 Butagasi Sacco 내에서 다양한 계정을 구성할 수 있습니다.",
       "The report request": "보고서 요청이 전송되었으며 보고서가 파일 저장소로 내보내집니다.",
       "The usage of stronger passwords": "더 강력한 비밀번호 사용을 시행하기 위한 표준 정의",
       "These are predefined postings": "사전 정의된 게시물입니다.",
@@ -5053,7 +5053,7 @@
       "Transactions": "업무",
       "Triggered": "트리거됨",
       "Two Factor Authentication": "2단계 인증",
-      "Two types of charges—fees and penalties": "Mifos는 수수료와 위약금이라는 두 가지 유형의 청구를 지원합니다. 서비스에는 회비, 대출 지불 수수료, 인출 수수료 등의 수수료가 부과됩니다. 고객이 제품 조건에서 벗어나는 것을 방지하기 위해 벌금이 부과됩니다.",
+      "Two types of charges—fees and penalties": "Butagasi Sacco는 수수료와 위약금이라는 두 가지 유형의 청구를 지원합니다. 서비스에는 회비, 대출 지불 수수료, 인출 수수료 등의 수수료가 부과됩니다. 고객이 제품 조건에서 벗어나는 것을 방지하기 위해 벌금이 부과됩니다.",
       "Two-factor authentication configuration": "이중 인증 구성 설정",
       "TXN Loans": "대출 거래",
       "TXN Savings": "저축 거래",
@@ -5530,7 +5530,7 @@
       "Closed": "종료됨",
       "Dashboard Export": "대시보드 내보내기",
       "Generated on": "생성 일시",
-      "Automated export": "Mifos X 글로벌 대시보드에서 자동으로 내보낸 파일입니다"
+      "Automated export": "Butagasi Sacco 글로벌 대시보드에서 자동으로 내보낸 파일입니다"
     },
     "permissions": {
       "actions": {
@@ -6402,7 +6402,7 @@
       "expand": "질문 보기",
       "collapse": "질문 숨기기"
     },
-    "brand": "Mifos X Copilot",
+    "brand": "Butagasi Sacco Copilot",
     "currentSession": "현재 세션",
     "newChat": "새 채팅",
     "close": "닫기",
@@ -6427,7 +6427,7 @@
       "send": "메시지 보내기",
       "stop": "생성 중지"
     },
-    "disclaimer": "Mifos X Copilot은 답을 찾도록 돕습니다. 자금이 움직이는 작업은 여전히 승인이 필요합니다.",
+    "disclaimer": "Butagasi Sacco Copilot은 답을 찾도록 돕습니다. 자금이 움직이는 작업은 여전히 승인이 필요합니다.",
     "nav": {
       "recentChats": "최근 채팅",
       "chat": "채팅",
@@ -6462,7 +6462,7 @@
       "delete": "대화 삭제"
     },
     "help": {
-      "capabilitiesTitle": "Mifos X Copilot이 할 수 있는 일",
+      "capabilitiesTitle": "Butagasi Sacco Copilot이 할 수 있는 일",
       "capabilities": {
         "lookup": "고객을 찾아 프로필 보기",
         "loans": "대출 내역과 상환 일정 보기",
@@ -6486,23 +6486,23 @@
       "confirmation": "확인"
     },
     "confirmWarning": "실제 자금이 움직입니다. 내용을 확인한 후 승인하세요.",
-    "openAssistant": "Mifos X Copilot 열기",
+    "openAssistant": "Butagasi Sacco Copilot 열기",
     "launcher": {
-      "working": "Mifos X Copilot이 요청을 처리하고 있습니다. Copilot 열기.",
-      "replying": "Mifos X Copilot이 답변하고 있습니다. Copilot 열기."
+      "working": "Butagasi Sacco Copilot이 요청을 처리하고 있습니다. Copilot 열기.",
+      "replying": "Butagasi Sacco Copilot이 답변하고 있습니다. Copilot 열기."
     },
     "newChatTitle": "새 대화",
     "errors": {
       "timedOut": "어시스턴트의 응답이 너무 오래 걸렸습니다. 다시 시도해 주세요.",
       "invalidLength": "메시지가 비어 있거나 너무 깁니다. 줄여서 다시 시도해 주세요.",
       "injectionBlocked": "메시지가 지시 무시 시도로 보여 전송되지 않았습니다. 다시 작성해 주세요.",
-      "streamFailed": "Mifos X Copilot에 연결할 수 없습니다. 다시 시도해 주세요."
+      "streamFailed": "Butagasi Sacco Copilot에 연결할 수 없습니다. 다시 시도해 주세요."
     },
     "confirm": {
       "reference": "참조",
       "pendingAnnouncement": "이 작업이 실행되기 전에 내용을 확인하세요."
     },
-    "assistantAvatarAlt": "Mifos X Copilot",
+    "assistantAvatarAlt": "Butagasi Sacco Copilot",
     "cardLabels": {
       "activationDate": "활성화일",
       "activeLoans": "활성 대출",
@@ -6602,12 +6602,12 @@
       "share": "공유"
     },
     "export": {
-      "heading": "Mifos Copilot 답변",
+      "heading": "Butagasi Sacco Copilot 답변",
       "question": "질문",
       "client": "고객",
       "askedBy": "질문자",
-      "disclaimer": "Fineract 기록을 바탕으로 Mifos Copilot이 작성했습니다. 조치하기 전에 원본 기록과 대조하십시오.",
-      "shareTitle": "Mifos Copilot 답변",
+      "disclaimer": "Fineract 기록을 바탕으로 Butagasi Sacco Copilot이 작성했습니다. 조치하기 전에 원본 기록과 대조하십시오.",
+      "shareTitle": "Butagasi Sacco Copilot 답변",
       "copiedToClipboard": "답변과 링크를 클립보드에 복사했습니다",
       "failed": "파일을 만들지 못했습니다. 다시 시도해 주세요.",
       "fileNameFallback": "copilot",

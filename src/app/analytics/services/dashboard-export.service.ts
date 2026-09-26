@@ -151,7 +151,7 @@ export class DashboardExportService {
     const metricValText = this.getTranslation('labels.inputs.Value', 'Value');
     const footerText = this.getTranslation(
       'labels.text.Automated export',
-      'This is an automated export from Mifos X Global Dashboard'
+      'This is an automated export from Butagasi Sacco Global Dashboard'
     );
 
     let html = `

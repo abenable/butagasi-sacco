@@ -85,7 +85,7 @@
       "reason": "Iemesls"
     }
   },
-  "APP_NAME": "Mifos® X WebApp",
+  "APP_NAME": "Butagasi Sacco",
   "Logged in as": "ielogojies Kā",
   "Remember me": "Atceries mani",
   "errors": {
@@ -581,7 +581,7 @@
     "Mifos Reporting Plugin for Eclipse Birt": "Mifos Reporting Plugin for Eclipse Birt",
     "version": {
       "Tenant": "Nomnieks",
-      "Mifos WebApp": "Mifos® WebApp",
+      "Mifos WebApp": "Butagasi Sacco",
       "Apache Fineract": "Apache Fineract®",
       "Server": "Serveris",
       "Username": "Lietotājvārds",
@@ -1401,7 +1401,7 @@
       "Assets": "Aktīvi",
       "Assets / Liability": "Aktīvi / Pasīvi",
       "Assign Payout": "Piešķirt izmaksu",
-      "Assign to Mifos Client": "Piešķirt Mifos klientam",
+      "Assign to Mifos Client": "Piešķirt Butagasi Sacco klientam",
       "Audit Trails": "Revīzijas pēdas",
       "Average Gap": "Vidējā Starpība",
       "Balance": "Līdzsvars",
@@ -1448,7 +1448,7 @@
       "Configure Fund Sources for Payment Channels": "Konfigurējiet līdzekļu avotus maksājumu kanāliem",
       "Configure Maker Checker Tasks": "Konfigurējiet Maker Checker uzdevumus",
       "Configure Maker-Checker Tasks": "Konfigurējiet Maker-Checker uzdevumus",
-      "Configure Mifos Organization Needs": "Sekojošais ceļvedis palīdzēs konfigurēt Mifos® atbilstoši jūsu organizācijas vajadzībām.",
+      "Configure Mifos Organization Needs": "Sekojošais ceļvedis palīdzēs konfigurēt Butagasi Sacco atbilstoši jūsu organizācijas vajadzībām.",
       "Confirm Payment": "Apstiprināt maksājumu",
       "Confirm Payout": "Apstiprināt izmaksu",
       "Confirm Transaction Details": "Apstiprināt darījuma detaļas",
@@ -1578,7 +1578,7 @@
       "Last Active": "Pēdējā aktīva",
       "Liabilities": "Saistības",
       "List of Users with their details": "Lietotāju saraksts ar viņu informāciju",
-      "List of all codes in the Mifos system": "Visu jūsu organizācijas kodu saraksts Mifos® sistēmā.",
+      "List of all codes in the Mifos system": "Visu jūsu organizācijas kodu saraksts Butagasi Sacco sistēmā.",
       "List of all currently available data tables": "Visu pašlaik pieejamo datu tabulu saraksts.",
       "List of all currently available reports": "Visu pašlaik pieejamo pārskatu saraksts. Lai iegūtu sīkāku informāciju, noklikšķiniet",
       "List of all maker checker tasks": "Visu veidotāju pārbaudītāja uzdevumu saraksts. Lai iegūtu sīkāku informāciju, noklikšķiniet",
@@ -1841,7 +1841,7 @@
       "View Transaction": "Skatīt Transakciju",
       "View Transfer": "Skatīt Pārskaitījumu",
       "Waive Charge": "Atteikties no maksas",
-      "Welcome to Mifos": "Laipni lūdzam Mifos®",
+      "Welcome to Mifos": "Laipni lūdzam Butagasi Sacco",
       "Why Open Source": "Kāpēc atvērtais kods",
       "Withdraw Money From Saving Account": "Izņemiet naudu no krājkonta",
       "Withhold Tax": "Ieturējuma nodoklis",
@@ -1862,7 +1862,7 @@
       "Shares": "Akcijas",
       "Transaction Type": "Darījuma veids",
       "Category": "Kategorija",
-      "Total Volume ($)": "Kopējais apjoms ($)",
+      "Total Volume (UGX)": "Kopējais apjoms (UGX)",
       "Trend": "Tendence",
       "Module": "Modulis",
       "Global Financial": "Globālās finanses",
@@ -4397,7 +4397,7 @@
       "Accounting": "Grāmatvedība",
       "Accounting Closures": "Grāmatvedības slēgšana",
       "Accounting Rules": "Grāmatvedības noteikumi",
-      "Accounting to journal entries": "Programmā Mifos X varat slēgt žurnāla ierakstu uzskaiti. Slēgšanu var piemērot visām filiālēm vai katrai filiālei atsevišķi. Organizācijām ir svarīgi periodiski slēgt grāmatvedību, lai novērstu darījumus, kas ietekmē grāmatvedības uzskaiti.",
+      "Accounting to journal entries": "Programmā Butagasi Sacco varat slēgt žurnāla ierakstu uzskaiti. Slēgšanu var piemērot visām filiālēm vai katrai filiālei atsevišķi. Organizācijām ir svarīgi periodiski slēgt grāmatvedību, lai novērstu darījumus, kas ietekmē grāmatvedības uzskaiti.",
       "Accounts linked to Financial Activities": "Ar finanšu darbībām saistītie konti ir kartēti konti, kas nepieciešami sistēmu ģenerējošu grāmatvedības darījumu veikšanai.",
       "Accrues income, expenses and liabilities": "Uzkrāj ienākumus, izdevumus un saistības norādītajā datumā",
       "Activated": "Aktivizēts",
@@ -4498,7 +4498,7 @@
       "Committee": "komiteja",
       "Compliant": "Atbilst",
       "Configurations": "Konfigurācijas",
-      "Configurations page allows you to further customize": "Lapa Konfigurācijas ļauj vēl vairāk pielāgot veidu, kā jūsu organizācija izmanto Mifos sistēmu.",
+      "Configurations page allows you to further customize": "Lapa Konfigurācijas ļauj vēl vairāk pielāgot veidu, kā jūsu organizācija izmanto Butagasi Sacco sistēmu.",
       "Configure Maker Checker Tasks": "Konfigurējiet Maker Checker uzdevumus",
       "Copy": "Kopēt",
       "Copy Account Number": "Kopējiet konta numuru",
@@ -4590,7 +4590,7 @@
       "Define or modify Maker Checker tasks": "Definējiet vai modificējiet Maker Checker uzdevumus",
       "Define or modify entity to entity mappings": "Definējiet vai modificējiet entītiju kartējumus",
       "Define or modify roles and associated permissions": "Definējiet vai mainiet lomas un saistītās atļaujas",
-      "Define what currencies interactions within the Mifos X system": "Šī sadaļa ļauj organizācijai definēt, kuras valūtas tiks izmantotas to mijiedarbībā Mifos X sistēmā.",
+      "Define what currencies interactions within the Mifos X system": "Šī sadaļa ļauj organizācijai definēt, kuras valūtas tiks izmantotas to mijiedarbībā Butagasi Sacco sistēmā.",
       "Defines rules for taking multiple rules": "Definē noteikumus vairāku noteikumu pieņemšanai",
       "Delete clients signature": "Vai tiešām vēlaties dzēst šo klienta parakstu?",
       "Delinquency Buckets": "Noziedzības spaiņi",
@@ -4616,7 +4616,7 @@
       "Download share accounts template and upload share account excel files": "Lejupielādējiet koplietošanas kontu veidni un augšupielādējiet koplietošanas konta Excel failus",
       "Download, Upload Offices Template": "Lejupielādējiet, augšupielādējiet biroju veidni",
       "Dropdown self service user administrative portal": "Nolaižamā izvēlne nodrošina piekļuvi pašapkalpošanās lietotāju administratīvajam portālam, lietotņu konfigurācijai un uzdevumu pārvaldībai.",
-      "Dropdown system reports": "Nolaižamā izvēlne nodrošina piekļuvi visu veidu sistēmas pārskatiem, tostarp noklusējuma ziņojumiem, ko nodrošina Mifos, un sistēmas pārskatiem, kurus izstrādās organizācija.",
+      "Dropdown system reports": "Nolaižamā izvēlne nodrošina piekļuvi visu veidu sistēmas pārskatiem, tostarp noklusējuma ziņojumiem, ko nodrošina Butagasi Sacco, un sistēmas pārskatiem, kurus izstrādās organizācija.",
       "Easy way to reassign all the loan": "Vienkāršs veids, kā pārdalīt visu aizdevumu no viena LO uz citu LO",
       "Edit": "Rediģēt",
       "Edit Account Number Preference": "Rediģēt konta numura preferenci",
@@ -4723,7 +4723,7 @@
       "Fund": "Fonds",
       "Fund Mapping": "Fondu kartēšana",
       "Funds are associated with loans": "Līdzekļi ir saistīti ar aizdevumiem",
-      "GLAccount Balances Application": "Tādējādi organizācijai, kas vēlas pāriet uz Mifos, ir vieglāk pārsūtīt GL kontu atlikumus (no esošās grāmatvedības lietojumprogrammas vai manuālās sistēmas) uz Mifos X Accounting.",
+      "GLAccount Balances Application": "Tādējādi organizācijai, kas vēlas pāriet uz Butagasi Sacco, ir vieglāk pārsūtīt GL kontu atlikumus (no esošās grāmatvedības lietojumprogrammas vai manuālās sistēmas) uz Butagasi Sacco Accounting.",
       "GSIM Account View": "GSIM konta skats",
       "Gap": "Starpība",
       "General": "Ģenerālis",
@@ -4829,7 +4829,7 @@
       "Manual journal entry transactions recorded in a journal": "Manuālā žurnāla ieraksta darījumi, kas ierakstīti žurnālā",
       "Message Gateway": "Ziņojumu vārteja",
       "Mifos Initiative": "Mifos® iniciatīva",
-      "Mifos X data-tables allow the user to add custom fields": "Mifos X datu tabulas ļauj lietotājam papildus iebūvētajiem laukiem pievienot pielāgotus laukus klienta profilam, aizdevuma/uzkrājuma kontam, grupai, centram vai birojam.",
+      "Mifos X data-tables allow the user to add custom fields": "Butagasi Sacco datu tabulas ļauj lietotājam papildus iebūvētajiem laukiem pievienot pielāgotus laukus klienta profilam, aizdevuma/uzkrājuma kontam, grupai, centram vai birojam.",
       "Migrate Opening Balances": "Migrēt atveres atlikumus",
       "Mild": "Viegls",
       "Missing required information. Please try again.": "Trūkst obligātās informācijas. Lūdzu, mēģiniet vēlreiz.",
@@ -4939,7 +4939,7 @@
       "Revert this transaction?": "Vai tiešām vēlaties atsaukt šo darījumu?",
       "Review the transaction and recipient details below, then assign the payout.": "Pārskatiet darījuma un saņēmēja detaļas zemāk, pēc tam piešķiriet izmaksu.",
       "Roles and Permissions": "Lomas un atļaujas",
-      "Roles and Permissions allow the administrator to control access": "Lomas un atļaujas ļauj administratoram kontrolēt piekļuvi Mifos, pamatojoties uz to, kādas lomas ir piešķirtas lietotājiem un kādas atļaujas ir piešķirtas lomām.",
+      "Roles and Permissions allow the administrator to control access": "Lomas un atļaujas ļauj administratoram kontrolēt piekļuvi Butagasi Sacco, pamatojoties uz to, kādas lomas ir piešķirtas lietotājiem un kādas atļaujas ir piešķirtas lomām.",
       "Rows": "Rindas",
       "S3 Amazon Service Configuration": "S3 Amazon pakalpojuma konfigurācija",
       "SMS": "īsziņa",
@@ -4961,7 +4961,7 @@
       "Scheduler Jobs can set batch jobs": "Izmantojot plānotāja darbus, varat iestatīt, lai pakešdarbi tiktu pabeigti ar regulāriem intervāliem. Šajā lapā varat ieplānot, modificēt vai dzēst darbus.",
       "Search": "Meklēt",
       "Search Journal Entry": "Meklēt žurnāla ierakstu",
-      "Search and assign this beneficiary to an existing Mifos client account": "Meklējiet un piešķiriet šo saņēmēju esošam Mifos klienta kontam",
+      "Search and assign this beneficiary to an existing Mifos client account": "Meklējiet un piešķiriet šo saņēmēju esošam Butagasi Sacco klienta kontam",
       "Search bar to filter fixed deposit products.": "Meklēšanas josla, lai filtrētu fiksētā depozīta produktus.",
       "Search by Text": "Meklēt pēc teksta",
       "Search by user": "Meklēt lietotājam",
@@ -5025,7 +5025,7 @@
       "Template I am trying to use": "Šī ir veidne, ko cenšos izmantot. Vai tas ir labi.",
       "Templates": "Veidnes",
       "Tenant": "Īrnieks",
-      "The Chart of Accounts - General Ledger Setup": "Kontu plāns — Virsgrāmatas iestatīšana ļauj organizēt dažādus kontus programmā Mifos X.",
+      "The Chart of Accounts - General Ledger Setup": "Kontu plāns — Virsgrāmatas iestatīšana ļauj organizēt dažādus kontus programmā Butagasi Sacco X.",
       "The report request": "Pārskata pieprasījums ir nosūtīts, un pārskats tiks eksportēts uz failu krātuvi",
       "The usage of stronger passwords": "Definējiet standartus spēcīgāku paroļu izmantošanai",
       "These are predefined postings": "Tie ir iepriekš noteikti ziņojumi",
@@ -5054,7 +5054,7 @@
       "Transactions": "Darījumi",
       "Triggered": "Izraisīts",
       "Two Factor Authentication": "Divu faktoru autentifikācija",
-      "Two types of charges—fees and penalties": "Mifos atbalsta divu veidu maksas — nodevas un soda naudas. Par pakalpojumiem tiek iekasēta maksa, piemēram, dalības maksa, kredīta izmaksas, izņemšanas maksas. Sodi tiek piemēroti, lai atturētu klientus no atkāpšanās no produkta noteikumiem",
+      "Two types of charges—fees and penalties": "Butagasi Sacco atbalsta divu veidu maksas — nodevas un soda naudas. Par pakalpojumiem tiek iekasēta maksa, piemēram, dalības maksa, kredīta izmaksas, izņemšanas maksas. Sodi tiek piemēroti, lai atturētu klientus no atkāpšanās no produkta noteikumiem",
       "Two-factor authentication configuration": "Divu faktoru autentifikācijas konfigurācijas iestatījumi",
       "TXN Loans": "Aizdevumu darījumi",
       "TXN Savings": "Uzkrājumu darījumi",
@@ -5530,7 +5530,7 @@
       "Closed": "Slēgts",
       "Dashboard Export": "Paneļa eksports",
       "Generated on": "Ģenerēts",
-      "Automated export": "Šis ir automātisks eksports no Mifos X globālā paneļa"
+      "Automated export": "Šis ir automātisks eksports no Butagasi Sacco globālā paneļa"
     },
     "permissions": {
       "actions": {
@@ -6402,7 +6402,7 @@
       "expand": "Rādīt jautājumus",
       "collapse": "Slēpt jautājumus"
     },
-    "brand": "Mifos X Copilot",
+    "brand": "Butagasi Sacco Copilot",
     "currentSession": "Pašreizējā sesija",
     "newChat": "Jauna saruna",
     "close": "Aizvērt",
@@ -6427,7 +6427,7 @@
       "send": "Sūtīt ziņojumu",
       "stop": "Apturēt ģenerēšanu"
     },
-    "disclaimer": "Mifos X Copilot palīdz atrast atbildes. Jebkurai naudas kustībai joprojām nepieciešams jūsu apstiprinājums.",
+    "disclaimer": "Butagasi Sacco Copilot palīdz atrast atbildes. Jebkurai naudas kustībai joprojām nepieciešams jūsu apstiprinājums.",
     "nav": {
       "recentChats": "Nesenās sarunas",
       "chat": "Saruna",
@@ -6462,7 +6462,7 @@
       "delete": "Dzēst sarunu"
     },
     "help": {
-      "capabilitiesTitle": "Ko Mifos X Copilot var izdarīt",
+      "capabilitiesTitle": "Ko Butagasi Sacco Copilot var izdarīt",
       "capabilities": {
         "lookup": "Atrast klientu un parādīt viņa profilu",
         "loans": "Parādīt aizdevuma datus un atmaksas grafikus",
@@ -6486,23 +6486,23 @@
       "confirmation": "Apstiprinājums"
     },
     "confirmWarning": "Šeit kustas reāla nauda. Pārbaudiet datus un tad apstipriniet.",
-    "openAssistant": "Atvērt Mifos X Copilot",
+    "openAssistant": "Atvērt Butagasi Sacco Copilot",
     "launcher": {
-      "working": "Mifos X Copilot apstrādā jūsu pieprasījumu. Atvērt Copilot.",
-      "replying": "Mifos X Copilot atbild. Atvērt Copilot."
+      "working": "Butagasi Sacco Copilot apstrādā jūsu pieprasījumu. Atvērt Copilot.",
+      "replying": "Butagasi Sacco Copilot atbild. Atvērt Copilot."
     },
     "newChatTitle": "Jauna saruna",
     "errors": {
       "timedOut": "Asistents atbildēja pārāk ilgi. Lūdzu, mēģiniet vēlreiz.",
       "invalidLength": "Ziņojums ir tukšs vai pārāk garš. Lūdzu, saīsiniet to un mēģiniet vēlreiz.",
       "injectionBlocked": "Ziņojums izskatās pēc mēģinājuma apiet norādījumus, tāpēc tas netika nosūtīts. Lūdzu, pārformulējiet to.",
-      "streamFailed": "Neizdevās sasniegt Mifos X Copilot. Lūdzu, mēģiniet vēlreiz."
+      "streamFailed": "Neizdevās sasniegt Butagasi Sacco Copilot. Lūdzu, mēģiniet vēlreiz."
     },
     "confirm": {
       "reference": "Atsauce",
       "pendingAnnouncement": "Pārbaudiet datus, pirms šī darbība tiek izpildīta."
     },
-    "assistantAvatarAlt": "Mifos X Copilot",
+    "assistantAvatarAlt": "Butagasi Sacco Copilot",
     "cardLabels": {
       "activationDate": "Aktivizācijas datums",
       "activeLoans": "Aktīvie aizdevumi",
@@ -6602,12 +6602,12 @@
       "share": "Kopīgot"
     },
     "export": {
-      "heading": "Mifos Copilot atbilde",
+      "heading": "Butagasi Sacco Copilot atbilde",
       "question": "Jautājums",
       "client": "Klients",
       "askedBy": "Jautāja",
-      "disclaimer": "Sagatavojis Mifos Copilot no Fineract ierakstiem. Pirms rīkoties, salīdziniet ar sākotnējo ierakstu.",
-      "shareTitle": "Mifos Copilot atbilde",
+      "disclaimer": "Sagatavojis Butagasi Sacco Copilot no Fineract ierakstiem. Pirms rīkoties, salīdziniet ar sākotnējo ierakstu.",
+      "shareTitle": "Butagasi Sacco Copilot atbilde",
       "copiedToClipboard": "Atbilde un saite nokopētas starpliktuvē",
       "failed": "Failu neizdevās izveidot. Lūdzu, mēģiniet vēlreiz.",
       "fileNameFallback": "copilot",

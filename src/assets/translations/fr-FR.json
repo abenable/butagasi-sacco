@@ -85,7 +85,7 @@
       "reason": "Motif"
     }
   },
-  "APP_NAME": "Mifos® X WebApp",
+  "APP_NAME": "Butagasi Sacco",
   "Logged in as": "connecté en tant que",
   "Remember me": "Souviens-toi de moi",
   "errors": {
@@ -581,7 +581,7 @@
     "Mifos Reporting Plugin for Eclipse Birt": "Mifos Reporting Plugin for Eclipse Birt",
     "version": {
       "Tenant": "Locataire",
-      "Mifos WebApp": "Mifos® WebApp",
+      "Mifos WebApp": "Butagasi Sacco",
       "Apache Fineract": "Apache Fineract®",
       "Server": "Serveur",
       "Username": "Nom d'utilisateur",
@@ -1401,7 +1401,7 @@
       "Assets": "Actifs",
       "Assets / Liability": "Actif / Passif",
       "Assign Payout": "Attribuer le versement",
-      "Assign to Mifos Client": "Attribuer au client Mifos",
+      "Assign to Mifos Client": "Attribuer au client Butagasi Sacco",
       "Audit Trails": "Des pistes de vérification",
       "Average Gap": "Écart Moyen",
       "Balance": "Équilibre",
@@ -1448,7 +1448,7 @@
       "Configure Fund Sources for Payment Channels": "Configurer les sources de fonds pour les canaux de paiement",
       "Configure Maker Checker Tasks": "Configurer les tâches de Maker Checker",
       "Configure Maker-Checker Tasks": "Configurer les tâches Maker-Checker",
-      "Configure Mifos Organization Needs": "La visite guidée suivante vous aidera à configurer Mifos® en fonction des besoins de votre organisation.",
+      "Configure Mifos Organization Needs": "La visite guidée suivante vous aidera à configurer Butagasi Sacco en fonction des besoins de votre organisation.",
       "Confirm Payment": "Confirmer le paiement",
       "Confirm Payout": "Confirmer le versement",
       "Confirm Transaction Details": "Confirmation des détails de la transaction",
@@ -1578,7 +1578,7 @@
       "Last Active": "Dernier actif",
       "Liabilities": "Passifs",
       "List of Users with their details": "Liste des utilisateurs avec leurs coordonnées",
-      "List of all codes in the Mifos system": "Liste de tous les codes du système Mifos® pour votre organisation.",
+      "List of all codes in the Mifos system": "Liste de tous les codes du système Butagasi Sacco pour votre organisation.",
       "List of all currently available data tables": "Liste de tous les tableaux de données actuellement trouvés.",
       "List of all currently available reports": "Liste de tous les rapports actuellement trouvés. Pour plus de détails cliquez",
       "List of all maker checker tasks": "Liste de toutes les tâches du vérificateur de créateur. Pour plus de détails cliquez",
@@ -1841,7 +1841,7 @@
       "View Transaction": "Voir la Transaction",
       "View Transfer": "Voir le Transfert",
       "Waive Charge": "Renoncer aux frais",
-      "Welcome to Mifos": "Bienvenue chez Mifos®",
+      "Welcome to Mifos": "Bienvenue chez Butagasi Sacco",
       "Why Open Source": "Pourquoi l'Open Source",
       "Withdraw Money From Saving Account": "Retirer de l'argent d'un compte d'épargne",
       "Withhold Tax": "Retenir l'impôt",
@@ -1862,7 +1862,7 @@
       "Shares": "Actions",
       "Transaction Type": "Type de transaction",
       "Category": "Catégorie",
-      "Total Volume ($)": "Volume total ($)",
+      "Total Volume (UGX)": "Volume total (UGX)",
       "Trend": "Tendance",
       "Module": "Module",
       "Global Financial": "Financier mondial",
@@ -4397,7 +4397,7 @@
       "Accounting": "Comptabilité",
       "Accounting Closures": "Clôtures comptables",
       "Accounting Rules": "Règles comptables",
-      "Accounting to journal entries": "Dans Mifos X, vous pouvez clôturer la comptabilité des écritures de journal. Les fermetures peuvent être appliquées à toutes les succursales ou à chaque succursale séparément. Il est important que les organisations clôturent périodiquement leurs comptes afin d’éviter les transactions affectant les livres comptables.",
+      "Accounting to journal entries": "Dans Butagasi Sacco, vous pouvez clôturer la comptabilité des écritures de journal. Les fermetures peuvent être appliquées à toutes les succursales ou à chaque succursale séparément. Il est important que les organisations clôturent périodiquement leurs comptes afin d’éviter les transactions affectant les livres comptables.",
       "Accounts linked to Financial Activities": "Les comptes liés aux activités financières sont des comptes mappés qui sont nécessaires pour effectuer des transactions comptables génératrices du système.",
       "Accrues income, expenses and liabilities": "Comptabilise les revenus, les dépenses et les dettes à la date indiquée.",
       "Activated": "Activé",
@@ -4498,7 +4498,7 @@
       "Committee": "Comité",
       "Compliant": "Conforme",
       "Configurations": "Configurations",
-      "Configurations page allows you to further customize": "La page Configurations vous permet de personnaliser davantage la façon dont votre organisation utilise le système Mifos.",
+      "Configurations page allows you to further customize": "La page Configurations vous permet de personnaliser davantage la façon dont votre organisation utilise le système Butagasi Sacco.",
       "Configure Maker Checker Tasks": "Configurer les tâches de Maker Checker",
       "Copy": "Copie",
       "Copy Account Number": "Copier le numéro de compte",
@@ -4590,7 +4590,7 @@
       "Define or modify Maker Checker tasks": "Définir ou modifier les tâches de Maker Checker",
       "Define or modify entity to entity mappings": "Définir ou modifier les mappages d'entité à entité",
       "Define or modify roles and associated permissions": "Définir ou modifier les rôles et les autorisations associées",
-      "Define what currencies interactions within the Mifos X system": "Cette section permet à une organisation de définir quelles devises seront utilisées tout au long de leurs interactions au sein du système Mifos X.",
+      "Define what currencies interactions within the Mifos X system": "Cette section permet à une organisation de définir quelles devises seront utilisées tout au long de leurs interactions au sein du système Butagasi Sacco.",
       "Defines rules for taking multiple rules": "Définit des règles pour prendre plusieurs règles",
       "Delete clients signature": "Êtes-vous sûr de vouloir supprimer la signature de ce client ?",
       "Delinquency Buckets": "Catégories de délinquance",
@@ -4616,7 +4616,7 @@
       "Download share accounts template and upload share account excel files": "Téléchargez le modèle de comptes de partage et téléchargez les fichiers Excel du compte de partage",
       "Download, Upload Offices Template": "Télécharger, télécharger le modèle de bureaux",
       "Dropdown self service user administrative portal": "Dropdown donne accès au portail d'administration des utilisateurs en libre-service, à la configuration des applications et à la gestion des tâches.",
-      "Dropdown system reports": "Dropdown donne accès à tous les types de rapports système, y compris les rapports par défaut fournis par Mifos et les rapports système qui seront développés par l'organisation.",
+      "Dropdown system reports": "Dropdown donne accès à tous les types de rapports système, y compris les rapports par défaut fournis par Butagasi Sacco et les rapports système qui seront développés par l'organisation.",
       "Easy way to reassign all the loan": "Un moyen simple de réaffecter tous les prêts d’un LO à un autre LO",
       "Edit": "Modifier",
       "Edit Account Number Preference": "Modifier la préférence du numéro de compte",
@@ -4723,7 +4723,7 @@
       "Fund": "Fonds",
       "Fund Mapping": "Cartographie des fonds",
       "Funds are associated with loans": "Les fonds sont associés à des prêts",
-      "GLAccount Balances Application": "Cela permet à une organisation souhaitant passer à Mifos de transférer plus facilement les soldes des comptes GL (depuis son application comptable existante ou son système manuel) vers Mifos X Accounting.",
+      "GLAccount Balances Application": "Cela permet à une organisation souhaitant passer à Butagasi Sacco de transférer plus facilement les soldes des comptes GL (depuis son application comptable existante ou son système manuel) vers Butagasi Sacco Accounting.",
       "GSIM Account View": "Vue du compte GSIM",
       "Gap": "Écart",
       "General": "Général",
@@ -4829,7 +4829,7 @@
       "Manual journal entry transactions recorded in a journal": "Opérations d'écriture de journal manuelle enregistrées dans un journal",
       "Message Gateway": "Passerelle de messages",
       "Mifos Initiative": "Initiative Mifos®",
-      "Mifos X data-tables allow the user to add custom fields": "Les tables de données Mifos X permettent à l'utilisateur d'ajouter des champs personnalisés en plus des champs intégrés à un profil client, un compte de prêt/épargne, un groupe, un centre ou un bureau.",
+      "Mifos X data-tables allow the user to add custom fields": "Les tables de données Butagasi Sacco permettent à l'utilisateur d'ajouter des champs personnalisés en plus des champs intégrés à un profil client, un compte de prêt/épargne, un groupe, un centre ou un bureau.",
       "Migrate Opening Balances": "Migrer les soldes d'ouverture",
       "Mild": "Faible",
       "Missing required information. Please try again.": "Informations requises manquantes. Veuillez réessayer.",
@@ -4939,7 +4939,7 @@
       "Revert this transaction?": "Êtes-vous sûr de vouloir annuler cette transaction ?",
       "Review the transaction and recipient details below, then assign the payout.": "Vérifiez les détails de la transaction et du bénéficiaire ci-dessous, puis attribuez le versement.",
       "Roles and Permissions": "Rôles et autorisations",
-      "Roles and Permissions allow the administrator to control access": "Les rôles et autorisations permettent à l'administrateur de contrôler l'accès à Mifos en fonction des rôles attribués aux utilisateurs et des autorisations attribuées aux rôles.",
+      "Roles and Permissions allow the administrator to control access": "Les rôles et autorisations permettent à l'administrateur de contrôler l'accès à Butagasi Sacco en fonction des rôles attribués aux utilisateurs et des autorisations attribuées aux rôles.",
       "Rows": "Lignes",
       "S3 Amazon Service Configuration": "Configuration du service Amazon S3",
       "SMS": "SMS",
@@ -4961,7 +4961,7 @@
       "Scheduler Jobs can set batch jobs": "En utilisant les tâches du planificateur, vous pouvez définir des tâches par lots à exécuter à intervalles réguliers. À partir de cette page, vous pouvez planifier, modifier ou supprimer des tâches.",
       "Search": "Recherche",
       "Search Journal Entry": "Rechercher une entrée de journal",
-      "Search and assign this beneficiary to an existing Mifos client account": "Rechercher et attribuer ce bénéficiaire à un compte client Mifos existant",
+      "Search and assign this beneficiary to an existing Mifos client account": "Rechercher et attribuer ce bénéficiaire à un compte client Butagasi Sacco existant",
       "Search bar to filter fixed deposit products.": "Barre de recherche pour filtrer les produits de dépôt à terme.",
       "Search by Text": "Recherche par texte",
       "Search by user": "Recherche par l'utilisateur",
@@ -5025,7 +5025,7 @@
       "Template I am trying to use": "C'est le modèle que j'essaie d'utiliser. Es-ce bien.",
       "Templates": "Modèles",
       "Tenant": "Locataire",
-      "The Chart of Accounts - General Ledger Setup": "Le Plan Comptable - Paramétrage du Grand Livre vous permet d'organiser vos différents comptes au sein de Mifos X.",
+      "The Chart of Accounts - General Ledger Setup": "Le Plan Comptable - Paramétrage du Grand Livre vous permet d'organiser vos différents comptes au sein de Butagasi Sacco.",
       "The report request": "La demande de rapport a été envoyée et le rapport sera exporté vers le référentiel de fichiers",
       "The usage of stronger passwords": "Définir des normes pour imposer l'utilisation de mots de passe plus forts",
       "These are predefined postings": "Ce sont des publications prédéfinies",
@@ -5054,7 +5054,7 @@
       "Transactions": "Transactions",
       "Triggered": "Déclenché",
       "Two Factor Authentication": "Authentification à deux facteurs",
-      "Two types of charges—fees and penalties": "Mifos prend en charge deux types de frais : les frais et les pénalités. Des frais sont facturés pour les services, par exemple les frais d'adhésion, les frais de décaissement du prêt, les frais de retrait. Des pénalités sont imposées pour décourager les clients de s'écarter des conditions d'un produit",
+      "Two types of charges—fees and penalties": "Butagasi Sacco prend en charge deux types de frais : les frais et les pénalités. Des frais sont facturés pour les services, par exemple les frais d'adhésion, les frais de décaissement du prêt, les frais de retrait. Des pénalités sont imposées pour décourager les clients de s'écarter des conditions d'un produit",
       "Two-factor authentication configuration": "Paramètres de configuration de l'authentification à deux facteurs",
       "TXN Loans": "Transactions de prêts",
       "TXN Savings": "Transactions d'épargne",
@@ -5530,7 +5530,7 @@
       "Closed": "Clôturé",
       "Dashboard Export": "Export du tableau de bord",
       "Generated on": "Généré le",
-      "Automated export": "Ceci est un export automatique du tableau de bord global Mifos X"
+      "Automated export": "Ceci est un export automatique du tableau de bord global Butagasi Sacco"
     },
     "permissions": {
       "actions": {
@@ -6402,7 +6402,7 @@
       "expand": "Afficher les questions",
       "collapse": "Masquer les questions"
     },
-    "brand": "Mifos X Copilot",
+    "brand": "Butagasi Sacco Copilot",
     "currentSession": "Session actuelle",
     "newChat": "Nouvelle discussion",
     "close": "Fermer",
@@ -6427,7 +6427,7 @@
       "send": "Envoyer le message",
       "stop": "Arrêter la génération"
     },
-    "disclaimer": "Mifos X Copilot vous aide à trouver des réponses. Toute opération qui déplace de l'argent requiert toujours votre validation.",
+    "disclaimer": "Butagasi Sacco Copilot vous aide à trouver des réponses. Toute opération qui déplace de l'argent requiert toujours votre validation.",
     "nav": {
       "recentChats": "Discussions récentes",
       "chat": "Discussion",
@@ -6462,7 +6462,7 @@
       "delete": "Supprimer la conversation"
     },
     "help": {
-      "capabilitiesTitle": "Ce que Mifos X Copilot peut faire",
+      "capabilitiesTitle": "Ce que Butagasi Sacco Copilot peut faire",
       "capabilities": {
         "lookup": "Trouver un client et afficher son profil",
         "loans": "Afficher les détails d'un prêt et son échéancier",
@@ -6486,23 +6486,23 @@
       "confirmation": "Confirmation"
     },
     "confirmWarning": "Cette opération déplace de l'argent réel. Vérifiez les détails, puis confirmez.",
-    "openAssistant": "Ouvrir Mifos X Copilot",
+    "openAssistant": "Ouvrir Butagasi Sacco Copilot",
     "launcher": {
-      "working": "Mifos X Copilot traite votre demande. Ouvrir Copilot.",
-      "replying": "Mifos X Copilot répond. Ouvrir Copilot."
+      "working": "Butagasi Sacco Copilot traite votre demande. Ouvrir Copilot.",
+      "replying": "Butagasi Sacco Copilot répond. Ouvrir Copilot."
     },
     "newChatTitle": "Nouvelle conversation",
     "errors": {
       "timedOut": "L'assistant a mis trop de temps à répondre. Veuillez réessayer.",
       "invalidLength": "Le message est vide ou trop long. Veuillez le raccourcir et réessayer.",
       "injectionBlocked": "Le message ressemble à une tentative de contournement des instructions, il n'a donc pas été envoyé. Veuillez le reformuler.",
-      "streamFailed": "Mifos X Copilot est injoignable. Veuillez réessayer."
+      "streamFailed": "Butagasi Sacco Copilot est injoignable. Veuillez réessayer."
     },
     "confirm": {
       "reference": "Référence",
       "pendingAnnouncement": "Vérifiez les détails avant l'exécution de cette action."
     },
-    "assistantAvatarAlt": "Mifos X Copilot",
+    "assistantAvatarAlt": "Butagasi Sacco Copilot",
     "cardLabels": {
       "activationDate": "Date d'activation",
       "activeLoans": "Prêts actifs",
@@ -6602,12 +6602,12 @@
       "share": "Partager"
     },
     "export": {
-      "heading": "Réponse de Mifos Copilot",
+      "heading": "Réponse de Butagasi Sacco Copilot",
       "question": "Question",
       "client": "Client",
       "askedBy": "Demandé par",
-      "disclaimer": "Produit par Mifos Copilot à partir des données Fineract. Vérifiez auprès de la fiche source avant d’agir.",
-      "shareTitle": "Réponse de Mifos Copilot",
+      "disclaimer": "Produit par Butagasi Sacco Copilot à partir des données Fineract. Vérifiez auprès de la fiche source avant d’agir.",
+      "shareTitle": "Réponse de Butagasi Sacco Copilot",
       "copiedToClipboard": "Réponse et lien copiés dans le presse-papiers",
       "failed": "Le fichier n’a pas pu être produit. Veuillez réessayer.",
       "fileNameFallback": "copilot",

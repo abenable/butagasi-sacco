@@ -85,7 +85,7 @@
       "reason": "Sababu"
     }
   },
-  "APP_NAME": "Mifos® X WebApp",
+  "APP_NAME": "Butagasi Sacco",
   "Logged in as": "Imeingia kama",
   "Remember me": "Nikumbuke",
   "errors": {
@@ -581,7 +581,7 @@
     "Mifos Reporting Plugin for Eclipse Birt": "Mifos Reporting Plugin for Eclipse Birt",
     "version": {
       "Tenant": "Mpangaji",
-      "Mifos WebApp": "Mifos® WebApp",
+      "Mifos WebApp": "Butagasi Sacco",
       "Apache Fineract": "Apache Fineract®",
       "Server": "Seva",
       "Username": "Jina la mtumiaji",
@@ -1401,7 +1401,7 @@
       "Assets": "Mali",
       "Assets / Liability": "Mali / Dhima",
       "Assign Payout": "Weka malipo",
-      "Assign to Mifos Client": "Weka kwa mteja wa Mifos",
+      "Assign to Mifos Client": "Weka kwa mteja wa Butagasi Sacco",
       "Audit Trails": "Njia za Ukaguzi",
       "Average Gap": "Tofauti ya Wastani",
       "Balance": "Mizani",
@@ -1448,7 +1448,7 @@
       "Configure Fund Sources for Payment Channels": "Sanidi Vyanzo vya Fedha vya Njia za Malipo",
       "Configure Maker Checker Tasks": "Sanidi Majukumu ya Kikagua Kitengeneza",
       "Configure Maker-Checker Tasks": "Sanidi Majukumu ya Kikagua",
-      "Configure Mifos Organization Needs": "Ziara ya kufuata itakusaidia kusanidi Mifos® kulingana na mahitaji ya shirika lako.",
+      "Configure Mifos Organization Needs": "Ziara ya kufuata itakusaidia kusanidi Butagasi Sacco kulingana na mahitaji ya shirika lako.",
       "Confirm Payment": "Thibitisha malipo",
       "Confirm Payout": "Thibitisha malipo",
       "Confirm Transaction Details": "Thibitisha Maelezo ya Muamala",
@@ -1577,7 +1577,7 @@
       "Last Active": "Iliyotumika Mwisho",
       "Liabilities": "Madeni",
       "List of Users with their details": "Orodha ya Watumiaji na maelezo yao",
-      "List of all codes in the Mifos system": "Orodha ya misimbo yote katika mfumo wa Mifos kwa shirika lako.",
+      "List of all codes in the Mifos system": "Orodha ya misimbo yote katika mfumo wa Butagasi Sacco kwa shirika lako.",
       "List of all currently available data tables": "Orodha ya majedwali yote ya data yanayopatikana kwa sasa.",
       "List of all currently available reports": "Orodha ya ripoti zote zinazopatikana kwa sasa. Kwa maelezo zaidi bofya",
       "List of all maker checker tasks": "Orodha ya kazi zote za kusahihisha mtengenezaji. Kwa maelezo zaidi bofya",
@@ -1840,7 +1840,7 @@
       "View Transaction": "Tazama Muamala",
       "View Transfer": "Tazama Uhamisho",
       "Waive Charge": "Kuondoa Malipo",
-      "Welcome to Mifos": "Karibu na Mifos®",
+      "Welcome to Mifos": "Karibu na Butagasi Sacco",
       "Why Open Source": "Kwa Nini Chanzo Huria",
       "Withdraw Money From Saving Account": "Toa Pesa kwenye Akaunti ya Kuokoa",
       "Withhold Tax": "Kodi ya Kuzuia",
@@ -1861,7 +1861,7 @@
       "Shares": "Hisa",
       "Transaction Type": "Aina ya Muamala",
       "Category": "Kitengo",
-      "Total Volume ($)": "Jumla ya Kiasi ($)",
+      "Total Volume (UGX)": "Jumla ya Kiasi (UGX)",
       "Trend": "Mwelekeo",
       "Module": "Moduli",
       "Global Financial": "Fedha za Ulimwengu",
@@ -4397,7 +4397,7 @@
       "Accounting": "Uhasibu",
       "Accounting Closures": "Kufungwa kwa Uhasibu",
       "Accounting Rules": "Kanuni za Uhasibu",
-      "Accounting to journal entries": "Katika Mifos X, unaweza kufunga uhasibu kwa maingizo ya jarida. Kufungwa kunaweza kutumika kwa matawi yote au kwa kila tawi tofauti. Ni muhimu kwa mashirika kufunga uhasibu mara kwa mara ili kuzuia miamala inayoathiri vitabu vya uhasibu.",
+      "Accounting to journal entries": "Katika Butagasi Sacco, unaweza kufunga uhasibu kwa maingizo ya jarida. Kufungwa kunaweza kutumika kwa matawi yote au kwa kila tawi tofauti. Ni muhimu kwa mashirika kufunga uhasibu mara kwa mara ili kuzuia miamala inayoathiri vitabu vya uhasibu.",
       "Accounts linked to Financial Activities": "Akaunti zilizounganishwa na Shughuli za Kifedha ni akaunti zilizopangwa ambazo zinahitajika kufanya shughuli za uhasibu zinazozalisha mfumo.",
       "Accrues income, expenses and liabilities": "Huongeza mapato, gharama na madeni kama tarehe iliyotolewa",
       "Activated": "Imewashwa",
@@ -4498,7 +4498,7 @@
       "Committee": "Kamati",
       "Compliant": "Inafuata",
       "Configurations": "Mipangilio",
-      "Configurations page allows you to further customize": "Ukurasa wa Mipangilio hukuruhusu kubinafsisha zaidi jinsi shirika lako linavyotumia mfumo wa Mifos.",
+      "Configurations page allows you to further customize": "Ukurasa wa Mipangilio hukuruhusu kubinafsisha zaidi jinsi shirika lako linavyotumia mfumo wa Butagasi Sacco.",
       "Configure Maker Checker Tasks": "Sanidi Majukumu ya Kikagua Kitengeneza",
       "Copy": "Nakili",
       "Copy Account Number": "Nakili Nambari ya Akaunti",
@@ -4590,7 +4590,7 @@
       "Define or modify Maker Checker tasks": "Bainisha au urekebishe kazi za Kikagua Kitengeneza",
       "Define or modify entity to entity mappings": "Bainisha au urekebishe huluki kwa mpangilio wa huluki",
       "Define or modify roles and associated permissions": "Bainisha au urekebishe majukumu na ruhusa zinazohusiana",
-      "Define what currencies interactions within the Mifos X system": "Sehemu hii inaruhusu shirika kufafanua ni sarafu gani zitatumika katika mwingiliano wao ndani ya mfumo wa Mifos X.",
+      "Define what currencies interactions within the Mifos X system": "Sehemu hii inaruhusu shirika kufafanua ni sarafu gani zitatumika katika mwingiliano wao ndani ya mfumo wa Butagasi Sacco.",
       "Defines rules for taking multiple rules": "Inafafanua sheria za kuchukua sheria nyingi",
       "Delete clients signature": "Je, una uhakika unataka kufuta sahihi hii ya mteja",
       "Delinquency Buckets": "Ndoo za Uhalifu",
@@ -4616,7 +4616,7 @@
       "Download share accounts template and upload share account excel files": "Pakua kiolezo cha akaunti za kushiriki na upakie faili za excel za akaunti",
       "Download, Upload Offices Template": "Pakua, Pakia Kiolezo cha Ofisi",
       "Dropdown self service user administrative portal": "Kunjuzi hutoa ufikiaji wa tovuti ya usimamizi ya mtumiaji wa huduma binafsi, usanidi wa programu na udhibiti wa kazi.",
-      "Dropdown system reports": "Kunjuzi hutoa ufikiaji wa aina zote za ripoti za mfumo ikiwa ni pamoja na ripoti chaguomsingi zinazotolewa na Mifos na ripoti za mfumo zitakazoundwa na shirika.",
+      "Dropdown system reports": "Kunjuzi hutoa ufikiaji wa aina zote za ripoti za mfumo ikiwa ni pamoja na ripoti chaguomsingi zinazotolewa na Butagasi Sacco na ripoti za mfumo zitakazoundwa na shirika.",
       "Easy way to reassign all the loan": "Njia rahisi ya kugawa upya mkopo wote kutoka LO moja hadi LO nyingine",
       "Edit": "Hariri",
       "Edit Account Number Preference": "Badilisha Upendeleo wa Nambari ya Akaunti",
@@ -4723,7 +4723,7 @@
       "Fund": "Mfuko",
       "Fund Mapping": "Ramani ya Fedha",
       "Funds are associated with loans": "Fedha zinahusishwa na mikopo",
-      "GLAccount Balances Application": "Hii hurahisisha shirika linalotaka kuhamia Mifos kuhamisha salio la akaunti ya GL (kutoka maombi yao ya uhasibu iliyopo au mfumo wao wenyewe) hadi Mifos X Accounting.",
+      "GLAccount Balances Application": "Hii hurahisisha shirika linalotaka kuhamia Butagasi Sacco kuhamisha salio la akaunti ya GL (kutoka maombi yao ya uhasibu iliyopo au mfumo wao wenyewe) hadi Butagasi Sacco Accounting.",
       "GSIM Account View": "Mwonekano wa Akaunti ya GSIM",
       "Gap": "Tofauti",
       "General": "Mkuu",
@@ -4829,7 +4829,7 @@
       "Manual journal entry transactions recorded in a journal": "Uingizaji wa shughuli za jarida kwa mikono iliyorekodiwa kwenye jarida",
       "Message Gateway": "Lango la Ujumbe",
       "Mifos Initiative": "Mpango wa Mifos®",
-      "Mifos X data-tables allow the user to add custom fields": "Jedwali la data la Mifos X huruhusu mtumiaji kuongeza sehemu maalum pamoja na sehemu zilizojengewa ndani kwa wasifu wa mteja, akaunti ya mkopo/kuokoa, kikundi, kituo au ofisi.",
+      "Mifos X data-tables allow the user to add custom fields": "Jedwali la data la Butagasi Sacco huruhusu mtumiaji kuongeza sehemu maalum pamoja na sehemu zilizojengewa ndani kwa wasifu wa mteja, akaunti ya mkopo/kuokoa, kikundi, kituo au ofisi.",
       "Migrate Opening Balances": "Kuhamia mizani ya ufunguzi",
       "Mild": "Hafifu",
       "Missing required information. Please try again.": "Taarifa zinazohitajika hazipo. Tafadhali jaribu tena.",
@@ -4939,7 +4939,7 @@
       "Revert this transaction?": "Je, una uhakika unataka kurudisha muamala huu?",
       "Review the transaction and recipient details below, then assign the payout.": "Pitia maelezo ya muamala na mpokeaji hapa chini, kisha uweke malipo.",
       "Roles and Permissions": "Majukumu na Ruhusa",
-      "Roles and Permissions allow the administrator to control access": "Majukumu na Ruhusa huruhusu msimamizi kudhibiti ufikiaji wa Mifos kulingana na majukumu gani yamekabidhiwa kwa Watumiaji na Ruhusa zipi zimekabidhiwa majukumu.",
+      "Roles and Permissions allow the administrator to control access": "Majukumu na Ruhusa huruhusu msimamizi kudhibiti ufikiaji wa Butagasi Sacco kulingana na majukumu gani yamekabidhiwa kwa Watumiaji na Ruhusa zipi zimekabidhiwa majukumu.",
       "Rows": "Safu",
       "S3 Amazon Service Configuration": "Usanidi wa Huduma ya Amazon S3",
       "SMS": "SMS",
@@ -4961,7 +4961,7 @@
       "Scheduler Jobs can set batch jobs": "Kwa kutumia Kazi za Mratibu, unaweza kuweka kazi za kundi kukamilishwa kwa vipindi vya kawaida. Kutoka kwa ukurasa huu unaweza kuratibu, kurekebisha au kufuta kazi.",
       "Search": "Tafuta",
       "Search Journal Entry": "Tafuta Ingizo la Jarida",
-      "Search and assign this beneficiary to an existing Mifos client account": "Tafuta na uweke mpokeaji huyu kwenye akaunti ya mteja wa Mifos iliyopo",
+      "Search and assign this beneficiary to an existing Mifos client account": "Tafuta na uweke mpokeaji huyu kwenye akaunti ya mteja wa Butagasi Sacco iliyopo",
       "Search bar to filter fixed deposit products.": "Upau wa utafutaji ili kuchuja bidhaa za amana zisizobadilika.",
       "Search by Text": "Tafuta kwa Maandishi",
       "Search by user": "Tafuta na mtumiaji",
@@ -5025,7 +5025,7 @@
       "Template I am trying to use": "Hiki ndicho kiolezo ninachojaribu kutumia. Je, ni sawa.",
       "Templates": "Violezo",
       "Tenant": "Mpangaji",
-      "The Chart of Accounts - General Ledger Setup": "Chati ya Akaunti - Mipangilio ya Leja ya Jumla hukuruhusu kupanga akaunti zako tofauti ndani ya Mifos X.",
+      "The Chart of Accounts - General Ledger Setup": "Chati ya Akaunti - Mipangilio ya Leja ya Jumla hukuruhusu kupanga akaunti zako tofauti ndani ya Butagasi Sacco.",
       "The report request": "Ombi la ripoti limetumwa na ripoti itasafirishwa hadi kwenye hazina ya faili",
       "The usage of stronger passwords": "Bainisha viwango vya kutekeleza utumiaji wa manenosiri yenye nguvu zaidi",
       "These are predefined postings": "Haya ni machapisho yaliyofafanuliwa awali",
@@ -5054,7 +5054,7 @@
       "Transactions": "Shughuli",
       "Triggered": "Zilizoletewa",
       "Two Factor Authentication": "Uthibitishaji wa Sababu Mbili",
-      "Two types of charges—fees and penalties": "Mifos hutumia aina mbili za malipo—ada na adhabu. Ada hutozwa kwa huduma—kwa mfano, ada za uanachama, ada za malipo ya mkopo, ada za uondoaji. Adhabu hutozwa ili kuwakatisha tamaa wateja kutoka kwa kukiuka masharti ya bidhaa",
+      "Two types of charges—fees and penalties": "Butagasi Sacco hutumia aina mbili za malipo—ada na adhabu. Ada hutozwa kwa huduma—kwa mfano, ada za uanachama, ada za malipo ya mkopo, ada za uondoaji. Adhabu hutozwa ili kuwakatisha tamaa wateja kutoka kwa kukiuka masharti ya bidhaa",
       "Two-factor authentication configuration": "Mipangilio ya usanidi wa uthibitishaji wa vipengele viwili",
       "TXN Loans": "Miamala ya mikopo",
       "TXN Savings": "Miamala ya akiba",
@@ -5530,7 +5530,7 @@
       "Closed": "Imefungwa",
       "Dashboard Export": "Uhamishaji wa Dashibodi",
       "Generated on": "Imetolewa tarehe",
-      "Automated export": "Huu ni uhamishaji wa kiotomatiki kutoka Dashibodi ya Kimataifa ya Mifos X"
+      "Automated export": "Huu ni uhamishaji wa kiotomatiki kutoka Dashibodi ya Kimataifa ya Butagasi Sacco"
     },
     "permissions": {
       "actions": {
@@ -6402,7 +6402,7 @@
       "expand": "Onyesha maswali",
       "collapse": "Ficha maswali"
     },
-    "brand": "Mifos X Copilot",
+    "brand": "Butagasi Sacco Copilot",
     "currentSession": "Kipindi cha sasa",
     "newChat": "Mazungumzo mapya",
     "close": "Funga",
@@ -6427,7 +6427,7 @@
       "send": "Tuma ujumbe",
       "stop": "Simamisha uzalishaji"
     },
-    "disclaimer": "Mifos X Copilot hukusaidia kupata majibu. Kila kinachohamisha pesa bado kinahitaji idhini yako.",
+    "disclaimer": "Butagasi Sacco Copilot hukusaidia kupata majibu. Kila kinachohamisha pesa bado kinahitaji idhini yako.",
     "nav": {
       "recentChats": "Mazungumzo ya hivi karibuni",
       "chat": "Mazungumzo",
@@ -6462,7 +6462,7 @@
       "delete": "Futa mazungumzo"
     },
     "help": {
-      "capabilitiesTitle": "Mifos X Copilot inaweza kufanya nini",
+      "capabilitiesTitle": "Butagasi Sacco Copilot inaweza kufanya nini",
       "capabilities": {
         "lookup": "Kutafuta mteja na kuonyesha wasifu wake",
         "loans": "Kuonyesha maelezo ya mkopo na ratiba za ulipaji",
@@ -6486,23 +6486,23 @@
       "confirmation": "Uthibitisho"
     },
     "confirmWarning": "Hii inahamisha pesa halisi. Kagua maelezo, kisha thibitisha.",
-    "openAssistant": "Fungua Mifos X Copilot",
+    "openAssistant": "Fungua Butagasi Sacco Copilot",
     "launcher": {
-      "working": "Mifos X Copilot inashughulikia ombi lako. Fungua Copilot.",
-      "replying": "Mifos X Copilot inajibu. Fungua Copilot."
+      "working": "Butagasi Sacco Copilot inashughulikia ombi lako. Fungua Copilot.",
+      "replying": "Butagasi Sacco Copilot inajibu. Fungua Copilot."
     },
     "newChatTitle": "Mazungumzo mapya",
     "errors": {
       "timedOut": "Msaidizi amechukua muda mrefu kujibu. Tafadhali jaribu tena.",
       "invalidLength": "Ujumbe ni tupu au mrefu sana. Tafadhali ufupishe na ujaribu tena.",
       "injectionBlocked": "Ujumbe unaonekana kama jaribio la kukiuka maelekezo, hivyo haukutumwa. Tafadhali uandike upya.",
-      "streamFailed": "Imeshindwa kufikia Mifos X Copilot. Tafadhali jaribu tena."
+      "streamFailed": "Imeshindwa kufikia Butagasi Sacco Copilot. Tafadhali jaribu tena."
     },
     "confirm": {
       "reference": "Rejeleo",
       "pendingAnnouncement": "Kagua maelezo kabla kitendo hiki hakijatekelezwa."
     },
-    "assistantAvatarAlt": "Mifos X Copilot",
+    "assistantAvatarAlt": "Butagasi Sacco Copilot",
     "cardLabels": {
       "activationDate": "Tarehe ya uanzishaji",
       "activeLoans": "Mikopo inayotumika",
@@ -6602,12 +6602,12 @@
       "share": "Shiriki"
     },
     "export": {
-      "heading": "Jibu la Mifos Copilot",
+      "heading": "Jibu la Butagasi Sacco Copilot",
       "question": "Swali",
       "client": "Mteja",
       "askedBy": "Aliyeuliza",
-      "disclaimer": "Limetayarishwa na Mifos Copilot kutoka kumbukumbu za Fineract. Linganisha na kumbukumbu asili kabla ya kuchukua hatua.",
-      "shareTitle": "Jibu la Mifos Copilot",
+      "disclaimer": "Limetayarishwa na Butagasi Sacco Copilot kutoka kumbukumbu za Fineract. Linganisha na kumbukumbu asili kabla ya kuchukua hatua.",
+      "shareTitle": "Jibu la Butagasi Sacco Copilot",
       "copiedToClipboard": "Jibu na kiungo vimenakiliwa",
       "failed": "Faili haikuweza kutengenezwa. Tafadhali jaribu tena.",
       "fileNameFallback": "copilot",

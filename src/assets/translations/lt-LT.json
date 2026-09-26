@@ -85,7 +85,7 @@
       "reason": "Priežastis"
     }
   },
-  "APP_NAME": "Mifos® X WebApp",
+  "APP_NAME": "Butagasi Sacco",
   "Logged in as": "prisijungęs kaip",
   "Remember me": "Prisimink mane",
   "errors": {
@@ -581,7 +581,7 @@
     "Mifos Reporting Plugin for Eclipse Birt": "Mifos Reporting Plugin for Eclipse Birt",
     "version": {
       "Tenant": "Nuomininkas",
-      "Mifos WebApp": "Mifos® WebApp",
+      "Mifos WebApp": "Butagasi Sacco",
       "Apache Fineract": "Apache Fineract®",
       "Server": "Serveris",
       "Username": "Vartotojo vardas",
@@ -1401,7 +1401,7 @@
       "Assets": "Turtas",
       "Assets / Liability": "Turtas / įsipareigojimai",
       "Assign Payout": "Priskirti išmoką",
-      "Assign to Mifos Client": "Priskirti Mifos klientui",
+      "Assign to Mifos Client": "Priskirti Butagasi Sacco klientui",
       "Audit Trails": "Audito takai",
       "Average Gap": "Vidutinis Skirtumas",
       "Balance": "Balansas",
@@ -1448,7 +1448,7 @@
       "Configure Fund Sources for Payment Channels": "Konfigūruokite mokėjimo kanalų lėšų šaltinius",
       "Configure Maker Checker Tasks": "Konfigūruokite Maker Checker užduotis",
       "Configure Maker-Checker Tasks": "Konfigūruokite Maker-Checker užduotis",
-      "Configure Mifos Organization Needs": "Šis vadovas padės sukonfigūruoti „Mifos“ pagal jūsų organizacijos poreikius.",
+      "Configure Mifos Organization Needs": "Šis vadovas padės sukonfigūruoti „Butagasi Sacco“ pagal jūsų organizacijos poreikius.",
       "Confirm Payment": "Patvirtinti mokėjimą",
       "Confirm Payout": "Patvirtinti išmoką",
       "Confirm Transaction Details": "Patvirtinti sandorio detales",
@@ -1578,7 +1578,7 @@
       "Last Active": "Paskutinis aktyvus",
       "Liabilities": "Įsipareigojimai",
       "List of Users with their details": "Vartotojų sąrašas su jų duomenimis",
-      "List of all codes in the Mifos system": "Visų kodų, esančių jūsų organizacijos Mifos® sistemoje, sąrašas.",
+      "List of all codes in the Mifos system": "Visų kodų, esančių jūsų organizacijos Butagasi Sacco sistemoje, sąrašas.",
       "List of all currently available data tables": "Visų šiuo metu turimų duomenų lentelių sąrašas.",
       "List of all currently available reports": "Visų šiuo metu galimų ataskaitų sąrašas. Norėdami gauti daugiau informacijos, spustelėkite",
       "List of all maker checker tasks": "Visų gamintojų tikrintojo užduočių sąrašas. Norėdami gauti daugiau informacijos, spustelėkite",
@@ -1841,7 +1841,7 @@
       "View Transaction": "Peržiūrėti Operaciją",
       "View Transfer": "Peržiūrėti Pavedimą",
       "Waive Charge": "Atsisakyti mokesčio",
-      "Welcome to Mifos": "Sveiki atvykę į Mifos®",
+      "Welcome to Mifos": "Sveiki atvykę į Butagasi Sacco",
       "Why Open Source": "Kodėl atvirasis kodas",
       "Withdraw Money From Saving Account": "Išimkite pinigus iš taupomosios sąskaitos",
       "Withhold Tax": "Išskaičiuoti mokestį",
@@ -1862,7 +1862,7 @@
       "Shares": "Akcijos",
       "Transaction Type": "Operacijos tipas",
       "Category": "Kategorija",
-      "Total Volume ($)": "Bendra apimtis ($)",
+      "Total Volume (UGX)": "Bendra apimtis (UGX)",
       "Trend": "Tendencija",
       "Module": "Modulis",
       "Global Financial": "Visuotiniai finansai",
@@ -4397,7 +4397,7 @@
       "Accounting": "Apskaita",
       "Accounting Closures": "Buhalterinės apskaitos uždarymas",
       "Accounting Rules": "Buhalterinės apskaitos taisyklės",
-      "Accounting to journal entries": "„Mifos X“ galite uždaryti žurnalo įrašų apskaitą. Uždarymas gali būti taikomas visoms šakoms arba kiekvienai šakai atskirai. Organizacijoms svarbu periodiškai uždaryti apskaitą, kad būtų išvengta sandorių, turinčių įtakos apskaitos knygoms.",
+      "Accounting to journal entries": "„Butagasi Sacco“ galite uždaryti žurnalo įrašų apskaitą. Uždarymas gali būti taikomas visoms šakoms arba kiekvienai šakai atskirai. Organizacijoms svarbu periodiškai uždaryti apskaitą, kad būtų išvengta sandorių, turinčių įtakos apskaitos knygoms.",
       "Accounts linked to Financial Activities": "Sąskaitos, susietos su finansine veikla, yra susietos sąskaitos, reikalingos sistemos generuojančiai apskaitos operacijai atlikti.",
       "Accrues income, expenses and liabilities": "Pajamas, išlaidas ir įsipareigojimus kaupia nurodytą dieną",
       "Activated": "Aktyvuota",
@@ -4498,7 +4498,7 @@
       "Committee": "komitetas",
       "Compliant": "Atitinka",
       "Configurations": "Konfigūracijos",
-      "Configurations page allows you to further customize": "Puslapyje Konfigūracijos galite toliau tinkinti, kaip jūsų organizacija naudoja „Mifos“ sistemą.",
+      "Configurations page allows you to further customize": "Puslapyje Konfigūracijos galite toliau tinkinti, kaip jūsų organizacija naudoja „Butagasi Sacco“ sistemą.",
       "Configure Maker Checker Tasks": "Konfigūruokite Maker Checker užduotis",
       "Copy": "Kopijuoti",
       "Copy Account Number": "Nukopijuokite sąskaitos numerį",
@@ -4590,7 +4590,7 @@
       "Define or modify Maker Checker tasks": "Apibrėžkite arba pakeiskite Maker Checker užduotis",
       "Define or modify entity to entity mappings": "Apibrėžkite arba pakeiskite objektą į objektų susiejimą",
       "Define or modify roles and associated permissions": "Apibrėžkite arba keiskite vaidmenis ir susijusius leidimus",
-      "Define what currencies interactions within the Mifos X system": "Šioje skiltyje organizacija gali apibrėžti, kokios valiutos bus naudojamos sąveikaujant Mifos X sistemoje.",
+      "Define what currencies interactions within the Mifos X system": "Šioje skiltyje organizacija gali apibrėžti, kokios valiutos bus naudojamos sąveikaujant Butagasi Sacco sistemoje.",
       "Defines rules for taking multiple rules": "Apibrėžia kelių taisyklių priėmimo taisykles",
       "Delete clients signature": "Ar tikrai norite ištrinti šį kliento parašą?",
       "Delinquency Buckets": "Nusikaltimų kaušeliai",
@@ -4616,7 +4616,7 @@
       "Download share accounts template and upload share account excel files": "Atsisiųskite bendrinimo paskyrų šabloną ir įkelkite bendrinimo paskyros „Excel“ failus",
       "Download, Upload Offices Template": "Atsisiųskite, įkelkite biurų šabloną",
       "Dropdown self service user administrative portal": "Išskleidžiamasis meniu suteikia prieigą prie savitarnos vartotojo administravimo portalo, programos konfigūracijos ir užduočių valdymo.",
-      "Dropdown system reports": "Išskleidžiamasis meniu suteikia prieigą prie visų tipų sistemos ataskaitų, įskaitant numatytąsias ataskaitas, kurias teikia Mifos, ir sistemos ataskaitas, kurias parengs organizacija.",
+      "Dropdown system reports": "Išskleidžiamasis meniu suteikia prieigą prie visų tipų sistemos ataskaitų, įskaitant numatytąsias ataskaitas, kurias teikia Butagasi Sacco, ir sistemos ataskaitas, kurias parengs organizacija.",
       "Easy way to reassign all the loan": "Lengvas būdas perkelti visą paskolą iš vieno LO į kitą LO",
       "Edit": "Redaguoti",
       "Edit Account Number Preference": "Redaguoti sąskaitos numerio nuostatą",
@@ -4723,7 +4723,7 @@
       "Fund": "Fondas",
       "Fund Mapping": "Fondo planavimas",
       "Funds are associated with loans": "Lėšos yra susijusios su paskolomis",
-      "GLAccount Balances Application": "Taip organizacijai, norinčiai pereiti prie „Mifos“, lengviau perkelti GL sąskaitų likučius (iš esamos apskaitos programos ar rankinės sistemos) į „Mifos X Accounting“.",
+      "GLAccount Balances Application": "Taip organizacijai, norinčiai pereiti prie „Butagasi Sacco“, lengviau perkelti GL sąskaitų likučius (iš esamos apskaitos programos ar rankinės sistemos) į „Butagasi Sacco Accounting“.",
       "GSIM Account View": "GSIM paskyros vaizdas",
       "Gap": "Skirtumas",
       "General": "Generolas",
@@ -4829,7 +4829,7 @@
       "Manual journal entry transactions recorded in a journal": "Neautomatinio žurnalo įrašymo operacijos, įrašytos į žurnalą",
       "Message Gateway": "Pranešimų vartai",
       "Mifos Initiative": "Mifos® iniciatyva",
-      "Mifos X data-tables allow the user to add custom fields": "„Mifos X“ duomenų lentelės leidžia vartotojui pridėti pasirinktinius laukus be įtaisytųjų laukų prie kliento profilio, paskolos / taupymo sąskaitos, grupės, centro ar biuro.",
+      "Mifos X data-tables allow the user to add custom fields": "„Butagasi Sacco“ duomenų lentelės leidžia vartotojui pridėti pasirinktinius laukus be įtaisytųjų laukų prie kliento profilio, paskolos / taupymo sąskaitos, grupės, centro ar biuro.",
       "Migrate Opening Balances": "Perkelkite atidarymo balansus",
       "Mild": "Lengvas",
       "Missing required information. Please try again.": "Trūksta privalomos informacijos. Bandykite dar kartą.",
@@ -4939,7 +4939,7 @@
       "Revert this transaction?": "Ar tikrai norite atšaukti šią operaciją?",
       "Review the transaction and recipient details below, then assign the payout.": "Peržiūrėkite sandorio ir gavėjo informaciją žemiau, tada priskirkite išmoką.",
       "Roles and Permissions": "Vaidmenys ir leidimai",
-      "Roles and Permissions allow the administrator to control access": "Vaidmenys ir leidimai leidžia administratoriui valdyti prieigą prie „Mifos“ pagal tai, kokie vaidmenys priskirti vartotojams ir kokie leidimai priskirti vaidmenims.",
+      "Roles and Permissions allow the administrator to control access": "Vaidmenys ir leidimai leidžia administratoriui valdyti prieigą prie „Butagasi Sacco“ pagal tai, kokie vaidmenys priskirti vartotojams ir kokie leidimai priskirti vaidmenims.",
       "Rows": "Eilutės",
       "S3 Amazon Service Configuration": "S3 Amazon paslaugos konfigūracija",
       "SMS": "trumpoji žinutė",
@@ -4961,7 +4961,7 @@
       "Scheduler Jobs can set batch jobs": "Naudodami planuoklio užduotis galite nustatyti, kad paketinės užduotys būtų atliekamos reguliariais intervalais. Šiame puslapyje galite planuoti, keisti arba ištrinti darbus.",
       "Search": "Paieška",
       "Search Journal Entry": "Ieškoti žurnalo įrašo",
-      "Search and assign this beneficiary to an existing Mifos client account": "Ieškokite ir priskirkite šį gavėją esamai Mifos kliento paskyrai",
+      "Search and assign this beneficiary to an existing Mifos client account": "Ieškokite ir priskirkite šį gavėją esamai Butagasi Sacco kliento paskyrai",
       "Search bar to filter fixed deposit products.": "Paieškos juosta, skirta filtruoti fiksuoto indėlio produktus.",
       "Search by Text": "Ieškoti pagal tekstą",
       "Search by user": "Ieškokite vartotojo",
@@ -5025,7 +5025,7 @@
       "Template I am trying to use": "Tai yra šablonas, kurį bandau naudoti. Ar tai gerai.",
       "Templates": "Šablonai",
       "Tenant": "Nuomininkas",
-      "The Chart of Accounts - General Ledger Setup": "Sąskaitų planas – Didžiosios knygos sąranka leidžia tvarkyti įvairias sąskaitas „Mifos X“.",
+      "The Chart of Accounts - General Ledger Setup": "Sąskaitų planas – Didžiosios knygos sąranka leidžia tvarkyti įvairias sąskaitas „Butagasi Sacco“.",
       "The report request": "Ataskaitos užklausa išsiųsta ir ataskaita bus eksportuota į failų saugyklą",
       "The usage of stronger passwords": "Apibrėžkite stipresnių slaptažodžių naudojimo standartus",
       "These are predefined postings": "Tai yra iš anksto nustatyti skelbimai",
@@ -5054,7 +5054,7 @@
       "Transactions": "Sandoriai",
       "Triggered": "Suaktyvinta",
       "Two Factor Authentication": "Dviejų faktorių autentifikavimas",
-      "Two types of charges—fees and penalties": "„Mifos“ palaiko dviejų tipų mokesčius – mokesčius ir baudas. Mokesčiai imami už paslaugas, pavyzdžiui, nario mokesčiai, paskolos išmokėjimo mokesčiai, išėmimo mokesčiai. Baudos taikomos siekiant atgrasyti klientus nuo nukrypimo nuo produkto sąlygų",
+      "Two types of charges—fees and penalties": "„Butagasi Sacco“ palaiko dviejų tipų mokesčius – mokesčius ir baudas. Mokesčiai imami už paslaugas, pavyzdžiui, nario mokesčiai, paskolos išmokėjimo mokesčiai, išėmimo mokesčiai. Baudos taikomos siekiant atgrasyti klientus nuo nukrypimo nuo produkto sąlygų",
       "Two-factor authentication configuration": "Dviejų veiksnių autentifikavimo konfigūracijos nustatymai",
       "TXN Loans": "Paskolų sandoriai",
       "TXN Savings": "Taupymo sandoriai",
@@ -5530,7 +5530,7 @@
       "Closed": "Uždaryta",
       "Dashboard Export": "Skydelio eksportas",
       "Generated on": "Sugeneruota",
-      "Automated export": "Tai automatinis eksportas iš „Mifos X“ visuotinio skydelio"
+      "Automated export": "Tai automatinis eksportas iš „Butagasi Sacco“ visuotinio skydelio"
     },
     "permissions": {
       "actions": {
@@ -6402,7 +6402,7 @@
       "expand": "Rodyti klausimus",
       "collapse": "Slėpti klausimus"
     },
-    "brand": "Mifos X Copilot",
+    "brand": "Butagasi Sacco Copilot",
     "currentSession": "Dabartinė sesija",
     "newChat": "Naujas pokalbis",
     "close": "Uždaryti",
@@ -6427,7 +6427,7 @@
       "send": "Siųsti žinutę",
       "stop": "Stabdyti generavimą"
     },
-    "disclaimer": "Mifos X Copilot padeda rasti atsakymus. Bet kokiam pinigų judėjimui vis tiek reikia jūsų patvirtinimo.",
+    "disclaimer": "Butagasi Sacco Copilot padeda rasti atsakymus. Bet kokiam pinigų judėjimui vis tiek reikia jūsų patvirtinimo.",
     "nav": {
       "recentChats": "Naujausi pokalbiai",
       "chat": "Pokalbis",
@@ -6462,7 +6462,7 @@
       "delete": "Ištrinti pokalbį"
     },
     "help": {
-      "capabilitiesTitle": "Ką gali Mifos X Copilot",
+      "capabilitiesTitle": "Ką gali Butagasi Sacco Copilot",
       "capabilities": {
         "lookup": "Rasti klientą ir parodyti jo profilį",
         "loans": "Parodyti paskolos duomenis ir grąžinimo grafikus",
@@ -6486,23 +6486,23 @@
       "confirmation": "Patvirtinimas"
     },
     "confirmWarning": "Čia juda tikri pinigai. Patikrinkite duomenis ir patvirtinkite.",
-    "openAssistant": "Atidaryti Mifos X Copilot",
+    "openAssistant": "Atidaryti Butagasi Sacco Copilot",
     "launcher": {
-      "working": "„Mifos X Copilot“ vykdo jūsų užklausą. Atverti „Copilot“.",
-      "replying": "„Mifos X Copilot“ atsako. Atverti „Copilot“."
+      "working": "„Butagasi Sacco Copilot“ vykdo jūsų užklausą. Atverti „Copilot“.",
+      "replying": "„Butagasi Sacco Copilot“ atsako. Atverti „Copilot“."
     },
     "newChatTitle": "Naujas pokalbis",
     "errors": {
       "timedOut": "Asistentas atsakinėjo per ilgai. Bandykite dar kartą.",
       "invalidLength": "Žinutė tuščia arba per ilga. Sutrumpinkite ją ir bandykite dar kartą.",
       "injectionBlocked": "Žinutė atrodo kaip bandymas apeiti nurodymus, todėl nebuvo išsiųsta. Perfrazuokite ją.",
-      "streamFailed": "Nepavyko pasiekti Mifos X Copilot. Bandykite dar kartą."
+      "streamFailed": "Nepavyko pasiekti Butagasi Sacco Copilot. Bandykite dar kartą."
     },
     "confirm": {
       "reference": "Nuoroda",
       "pendingAnnouncement": "Prieš vykdant šį veiksmą patikrinkite duomenis."
     },
-    "assistantAvatarAlt": "Mifos X Copilot",
+    "assistantAvatarAlt": "Butagasi Sacco Copilot",
     "cardLabels": {
       "activationDate": "Aktyvinimo data",
       "activeLoans": "Aktyvios paskolos",
@@ -6602,12 +6602,12 @@
       "share": "Bendrinti"
     },
     "export": {
-      "heading": "Mifos Copilot atsakymas",
+      "heading": "Butagasi Sacco Copilot atsakymas",
       "question": "Klausimas",
       "client": "Klientas",
       "askedBy": "Klausė",
-      "disclaimer": "Parengė Mifos Copilot pagal Fineract įrašus. Prieš imdamiesi veiksmų palyginkite su pirminiu įrašu.",
-      "shareTitle": "Mifos Copilot atsakymas",
+      "disclaimer": "Parengė Butagasi Sacco Copilot pagal Fineract įrašus. Prieš imdamiesi veiksmų palyginkite su pirminiu įrašu.",
+      "shareTitle": "Butagasi Sacco Copilot atsakymas",
       "copiedToClipboard": "Atsakymas ir nuoroda nukopijuoti į iškarpinę",
       "failed": "Nepavyko sukurti failo. Bandykite dar kartą.",
       "fileNameFallback": "copilot",

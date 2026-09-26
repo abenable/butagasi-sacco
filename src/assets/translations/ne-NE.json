@@ -85,7 +85,7 @@
       "reason": "कारण"
     }
   },
-  "APP_NAME": "Mifos® X WebApp",
+  "APP_NAME": "Butagasi Sacco",
   "Logged in as": "को रूपमा लग इन गरियो",
   "Remember me": "मलाई सम्झनुहोस्",
   "errors": {
@@ -581,7 +581,7 @@
     "Mifos Reporting Plugin for Eclipse Birt": "Mifos Reporting Plugin for Eclipse Birt",
     "version": {
       "Tenant": "भाडामा लिने व्यक्ति",
-      "Mifos WebApp": "Mifos® WebApp",
+      "Mifos WebApp": "Butagasi Sacco",
       "Apache Fineract": "Apache Fineract®",
       "Server": "सर्भर",
       "Username": "प्रयोगकर्ता नाम",
@@ -1401,7 +1401,7 @@
       "Assets": "सम्पत्तिहरू",
       "Assets / Liability": "सम्पत्ति / दायित्व",
       "Assign Payout": "भुक्तानी तोक्नुहोस्",
-      "Assign to Mifos Client": "Mifos ग्राहकलाई तोक्नुहोस्",
+      "Assign to Mifos Client": "Butagasi Sacco ग्राहकलाई तोक्नुहोस्",
       "Audit Trails": "अडिट ट्रेलहरू",
       "Average Gap": "औसत अन्तर",
       "Balance": "सन्तुलन",
@@ -1448,7 +1448,7 @@
       "Configure Fund Sources for Payment Channels": "भुक्तानी च्यानलहरूको लागि कोष स्रोतहरू कन्फिगर गर्नुहोस्",
       "Configure Maker Checker Tasks": "मेकर जाँचकर्ता कार्यहरू कन्फिगर गर्नुहोस्",
       "Configure Maker-Checker Tasks": "मेकर-चेकर कार्यहरू कन्फिगर गर्नुहोस्",
-      "Configure Mifos Organization Needs": "निम्न गाईड टूरले तपाइँलाई तपाइँको संगठन आवश्यकता अनुसार Mifos® कन्फिगर गर्न मद्दत गर्नेछ।",
+      "Configure Mifos Organization Needs": "निम्न गाईड टूरले तपाइँलाई तपाइँको संगठन आवश्यकता अनुसार Butagasi Sacco कन्फिगर गर्न मद्दत गर्नेछ।",
       "Confirm Payment": "भुक्तानी पुष्टि गर्नुहोस्",
       "Confirm Payout": "भुक्तानी वितरण पुष्टि गर्नुहोस्",
       "Confirm Transaction Details": "लेनदेन विवरण पुष्टि गर्नुहोस्",
@@ -1578,7 +1578,7 @@
       "Last Active": "पछिल्लो सक्रिय",
       "Liabilities": "दायित्वहरू",
       "List of Users with their details": "तिनीहरूको विवरण सहित प्रयोगकर्ताहरूको सूची",
-      "List of all codes in the Mifos system": "तपाईंको संगठनको लागि Mifos® प्रणालीमा सबै कोडहरूको सूची।",
+      "List of all codes in the Mifos system": "तपाईंको संगठनको लागि Butagasi Sacco प्रणालीमा सबै कोडहरूको सूची।",
       "List of all currently available data tables": "सबै हाल उपलब्ध डाटा तालिकाहरूको सूची।",
       "List of all currently available reports": "सबै हाल उपलब्ध रिपोर्टहरूको सूची। थप विवरणहरूको लागि क्लिक गर्नुहोस्",
       "List of all maker checker tasks": "सबै निर्माता परीक्षक कार्यहरूको सूची। थप विवरणहरूको लागि क्लिक गर्नुहोस्",
@@ -1841,7 +1841,7 @@
       "View Transaction": "कारोबार हेर्नुहोस्",
       "View Transfer": "स्थानान्तरण हेर्नुहोस्",
       "Waive Charge": "शुल्क छुट",
-      "Welcome to Mifos": "Mifos® मा स्वागत छ",
+      "Welcome to Mifos": "Butagasi Sacco मा स्वागत छ",
       "Why Open Source": "किन ओपन सोर्स",
       "Withdraw Money From Saving Account": "बचत खाताबाट पैसा निकाल्नुहोस्",
       "Withhold Tax": "कर रोक",
@@ -1862,7 +1862,7 @@
       "Shares": "शेयरहरू",
       "Transaction Type": "कारोबारको प्रकार",
       "Category": "श्रेणी",
-      "Total Volume ($)": "कुल रकम ($)",
+      "Total Volume (UGX)": "कुल रकम (UGX)",
       "Trend": "प्रवृत्ति",
       "Module": "मोड्युल",
       "Global Financial": "ग्लोबल वित्तीय",
@@ -4397,7 +4397,7 @@
       "Accounting": "लेखा",
       "Accounting Closures": "लेखा बन्द",
       "Accounting Rules": "लेखा नियम",
-      "Accounting to journal entries": "Mifos X मा, तपाईं जर्नल प्रविष्टिहरूमा लेखा बन्द गर्न सक्नुहुन्छ। बन्दहरू सबै शाखाहरूमा वा प्रत्येक शाखाहरूमा छुट्टै लागू गर्न सकिन्छ। लेखा पुस्तकहरूलाई असर गर्ने लेनदेनहरूलाई रोक्न संगठनहरूले आवधिक रूपमा लेखा बन्द गर्नु महत्त्वपूर्ण छ।",
+      "Accounting to journal entries": "Butagasi Sacco मा, तपाईं जर्नल प्रविष्टिहरूमा लेखा बन्द गर्न सक्नुहुन्छ। बन्दहरू सबै शाखाहरूमा वा प्रत्येक शाखाहरूमा छुट्टै लागू गर्न सकिन्छ। लेखा पुस्तकहरूलाई असर गर्ने लेनदेनहरूलाई रोक्न संगठनहरूले आवधिक रूपमा लेखा बन्द गर्नु महत्त्वपूर्ण छ।",
       "Accounts linked to Financial Activities": "वित्तीय गतिविधिहरूसँग लिङ्क गरिएका खाताहरू म्याप गरिएका खाताहरू हुन् जुन प्रणाली सिर्जना गर्ने लेखा लेनदेन गर्न आवश्यक हुन्छ।",
       "Accrues income, expenses and liabilities": "प्रदान गरिएको मिति अनुसार आय, खर्च र दायित्वहरू जम्मा गर्दछ",
       "Activated": "सक्रिय गरियो",
@@ -4498,7 +4498,7 @@
       "Committee": "समिति",
       "Compliant": "अनुपालन",
       "Configurations": "कन्फिगरेसनहरू",
-      "Configurations page allows you to further customize": "कन्फिगरेसन पृष्ठले तपाइँलाई तपाइँको संगठनले Mifos प्रणाली प्रयोग गर्ने तरिकालाई थप अनुकूलन गर्न अनुमति दिन्छ।",
+      "Configurations page allows you to further customize": "कन्फिगरेसन पृष्ठले तपाइँलाई तपाइँको संगठनले Butagasi Sacco प्रणाली प्रयोग गर्ने तरिकालाई थप अनुकूलन गर्न अनुमति दिन्छ।",
       "Configure Maker Checker Tasks": "मेकर जाँचकर्ता कार्यहरू कन्फिगर गर्नुहोस्",
       "Copy": "कापी",
       "Copy Account Number": "खाता नम्बर प्रतिलिपि गर्नुहोस्",
@@ -4590,7 +4590,7 @@
       "Define or modify Maker Checker tasks": "मेकर जाँचकर्ता कार्यहरू परिभाषित वा परिमार्जन गर्नुहोस्",
       "Define or modify entity to entity mappings": "इकाई म्यापिङहरूमा इकाई परिभाषित वा परिमार्जन गर्नुहोस्",
       "Define or modify roles and associated permissions": "भूमिका र सम्बन्धित अनुमतिहरू परिभाषित वा परिमार्जन गर्नुहोस्",
-      "Define what currencies interactions within the Mifos X system": "यो खण्डले संगठनलाई Mifos X प्रणाली भित्रको अन्तरक्रियामा कुन मुद्राहरू प्रयोग गरिनेछ भनेर परिभाषित गर्न अनुमति दिन्छ।",
+      "Define what currencies interactions within the Mifos X system": "यो खण्डले संगठनलाई Butagasi Sacco प्रणाली भित्रको अन्तरक्रियामा कुन मुद्राहरू प्रयोग गरिनेछ भनेर परिभाषित गर्न अनुमति दिन्छ।",
       "Defines rules for taking multiple rules": "धेरै नियमहरू लिने नियमहरू परिभाषित गर्दछ",
       "Delete clients signature": "के तपाइँ निश्चित हुनुहुन्छ कि तपाइँ यो ग्राहकको हस्ताक्षर मेटाउन चाहनुहुन्छ",
       "Delinquency Buckets": "अपराधी बाल्टीहरू",
@@ -4616,7 +4616,7 @@
       "Download share accounts template and upload share account excel files": "सेयर खाता टेम्प्लेट डाउनलोड गर्नुहोस् र सेयर खाता एक्सेल फाइलहरू अपलोड गर्नुहोस्",
       "Download, Upload Offices Template": "डाउनलोड गर्नुहोस्, अफिस टेम्प्लेट अपलोड गर्नुहोस्",
       "Dropdown self service user administrative portal": "ड्रपडाउनले स्वयं सेवा प्रयोगकर्ता प्रशासनिक पोर्टल, एप कन्फिगरेसन र कार्य व्यवस्थापनमा पहुँच प्रदान गर्दछ।",
-      "Dropdown system reports": "ड्रपडाउनले Mifos द्वारा प्रदान गरिएका पूर्वनिर्धारित रिपोर्टहरू र संस्थाद्वारा विकास गरिने प्रणाली रिपोर्टहरू सहित सबै प्रकारका प्रणाली रिपोर्टहरूमा पहुँच प्रदान गर्दछ।",
+      "Dropdown system reports": "ड्रपडाउनले Butagasi Sacco द्वारा प्रदान गरिएका पूर्वनिर्धारित रिपोर्टहरू र संस्थाद्वारा विकास गरिने प्रणाली रिपोर्टहरू सहित सबै प्रकारका प्रणाली रिपोर्टहरूमा पहुँच प्रदान गर्दछ।",
       "Easy way to reassign all the loan": "एक LO बाट अर्को LO मा सबै ऋण पुन: असाइन गर्ने सजिलो तरिका",
       "Edit": "सम्पादन गर्नु",
       "Edit Account Number Preference": "खाता नम्बर प्राथमिकता सम्पादन गर्नुहोस्",
@@ -4723,7 +4723,7 @@
       "Fund": "कोष",
       "Fund Mapping": "कोष म्यापिङ",
       "Funds are associated with loans": "कोष ऋण संग सम्बन्धित छ",
-      "GLAccount Balances Application": "यसले Mifos मा जान चाहने संस्थालाई GL खाता ब्यालेन्सहरू (तिनीहरूको अवस्थित लेखा अनुप्रयोग वा म्यानुअल प्रणालीबाट) Mifos X Accounting मा स्थानान्तरण गर्न सजिलो बनाउँछ।",
+      "GLAccount Balances Application": "यसले Butagasi Sacco मा जान चाहने संस्थालाई GL खाता ब्यालेन्सहरू (तिनीहरूको अवस्थित लेखा अनुप्रयोग वा म्यानुअल प्रणालीबाट) Butagasi Sacco Accounting मा स्थानान्तरण गर्न सजिलो बनाउँछ।",
       "GSIM Account View": "GSIM खाता दृश्य",
       "Gap": "अन्तर",
       "General": "सामान्य",
@@ -4829,7 +4829,7 @@
       "Manual journal entry transactions recorded in a journal": "जर्नलमा रेकर्ड गरिएको म्यानुअल जर्नल प्रविष्टि लेनदेन",
       "Message Gateway": "सन्देश गेटवे",
       "Mifos Initiative": "Mifos® पहल",
-      "Mifos X data-tables allow the user to add custom fields": "Mifos X डाटा-टेबलहरूले प्रयोगकर्तालाई ग्राहक प्रोफाइल, ऋण/बचत खाता, समूह, केन्द्र वा कार्यालयमा निर्मित क्षेत्रहरू बाहेक अनुकूलन क्षेत्रहरू थप्न अनुमति दिन्छ।",
+      "Mifos X data-tables allow the user to add custom fields": "Butagasi Sacco डाटा-टेबलहरूले प्रयोगकर्तालाई ग्राहक प्रोफाइल, ऋण/बचत खाता, समूह, केन्द्र वा कार्यालयमा निर्मित क्षेत्रहरू बाहेक अनुकूलन क्षेत्रहरू थप्न अनुमति दिन्छ।",
       "Migrate Opening Balances": "ओप्रवाहको ब्यालेन्स सारियो",
       "Mild": "हल्का",
       "Missing required information. Please try again.": "आवश्यक जानकारी छुटेको छ। कृपया पुनः प्रयास गर्नुहोस्।",
@@ -4939,7 +4939,7 @@
       "Revert this transaction?": "के तपाइँ यो लेनदेन उल्टाउन निश्चित हुनुहुन्छ?",
       "Review the transaction and recipient details below, then assign the payout.": "तलको लेनदेन र प्राप्तकर्ता विवरण समीक्षा गर्नुहोस्, त्यसपछि भुक्तानी तोक्नुहोस्।",
       "Roles and Permissions": "भूमिका र अनुमतिहरू",
-      "Roles and Permissions allow the administrator to control access": "भूमिका र अनुमतिहरूले प्रयोगकर्ताहरूलाई कुन भूमिकाहरू तोकिएका छन् र भूमिकाहरूलाई कुन अनुमतिहरू तोकिएका छन् भन्ने आधारमा Mifos मा पहुँच नियन्त्रण गर्न प्रशासकलाई अनुमति दिन्छ।",
+      "Roles and Permissions allow the administrator to control access": "भूमिका र अनुमतिहरूले प्रयोगकर्ताहरूलाई कुन भूमिकाहरू तोकिएका छन् र भूमिकाहरूलाई कुन अनुमतिहरू तोकिएका छन् भन्ने आधारमा Butagasi Sacco मा पहुँच नियन्त्रण गर्न प्रशासकलाई अनुमति दिन्छ।",
       "Rows": "पंक्तिहरू",
       "S3 Amazon Service Configuration": "S3 Amazon सेवा कन्फिगरेसन",
       "SMS": "एस एम एस",
@@ -4961,7 +4961,7 @@
       "Scheduler Jobs can set batch jobs": "शेड्युलर कार्यहरू प्रयोग गरेर, तपाइँ नियमित अन्तरालहरूमा पूरा गर्न ब्याच कार्यहरू सेट गर्न सक्नुहुन्छ। यस पृष्ठबाट तपाईंले कार्यहरू तालिका, परिमार्जन वा मेटाउन सक्नुहुन्छ।",
       "Search": "खोज्नुहोस्",
       "Search Journal Entry": "खोज जर्नल प्रविष्टि",
-      "Search and assign this beneficiary to an existing Mifos client account": "यो लाभग्राहीलाई खोजेर अवस्थित Mifos ग्राहक खातामा तोक्नुहोस्",
+      "Search and assign this beneficiary to an existing Mifos client account": "यो लाभग्राहीलाई खोजेर अवस्थित Butagasi Sacco ग्राहक खातामा तोक्नुहोस्",
       "Search bar to filter fixed deposit products.": "फिक्स्ड डिपोजिट उत्पादनहरू फिल्टर गर्न खोजी पट्टी।",
       "Search by Text": "पाठ द्वारा खोज्नुहोस्",
       "Search by user": "प्रयोगकर्ता द्वारा खोज्नुहोस्",
@@ -5025,7 +5025,7 @@
       "Template I am trying to use": "यो टेम्प्लेट हो जुन म प्रयोग गर्न खोज्दै छु। त्यो ठीक छ?",
       "Templates": "टेम्प्लेटहरू",
       "Tenant": "किरायेदार",
-      "The Chart of Accounts - General Ledger Setup": "खाताहरूको चार्ट - सामान्य लेजर सेटअपले तपाईंलाई Mifos X भित्र आफ्ना विभिन्न खाताहरू व्यवस्थित गर्न अनुमति दिन्छ।",
+      "The Chart of Accounts - General Ledger Setup": "खाताहरूको चार्ट - सामान्य लेजर सेटअपले तपाईंलाई Butagasi Sacco भित्र आफ्ना विभिन्न खाताहरू व्यवस्थित गर्न अनुमति दिन्छ।",
       "The report request": "रिपोर्ट अनुरोध पठाइएको छ र रिपोर्ट फाइल भण्डारमा निर्यात गरिनेछ",
       "The usage of stronger passwords": "बलियो पासवर्डहरूको प्रयोग लागू गर्न मापदण्डहरू परिभाषित गर्नुहोस्",
       "These are predefined postings": "यी पूर्वनिर्धारित पोस्टहरू हुन्",
@@ -5054,7 +5054,7 @@
       "Transactions": "लेनदेन",
       "Triggered": "ट्रिगर गरिएको",
       "Two Factor Authentication": "दुई कारक प्रमाणीकरण",
-      "Two types of charges—fees and penalties": "Mifos ले दुई प्रकारका शुल्कहरूलाई समर्थन गर्दछ- शुल्क र जरिवाना। सेवाहरूको लागि शुल्क लगाइन्छ — उदाहरणका लागि, सदस्यता शुल्क, ऋण वितरण शुल्क, निकासी शुल्क। उत्पादनका सर्तहरूबाट विचलित हुनबाट ग्राहकहरूलाई निरुत्साहित गर्न दण्डहरू लगाइन्छ",
+      "Two types of charges—fees and penalties": "Butagasi Sacco ले दुई प्रकारका शुल्कहरूलाई समर्थन गर्दछ- शुल्क र जरिवाना। सेवाहरूको लागि शुल्क लगाइन्छ — उदाहरणका लागि, सदस्यता शुल्क, ऋण वितरण शुल्क, निकासी शुल्क। उत्पादनका सर्तहरूबाट विचलित हुनबाट ग्राहकहरूलाई निरुत्साहित गर्न दण्डहरू लगाइन्छ",
       "Two-factor authentication configuration": "दुई-कारक प्रमाणीकरण कन्फिगरेसन सेटिङहरू",
       "TXN Loans": "ऋण लेनदेन",
       "TXN Savings": "बचत लेनदेन",
@@ -5530,7 +5530,7 @@
       "Closed": "बन्द गरियो",
       "Dashboard Export": "ड्यासबोर्ड निर्यात",
       "Generated on": "उत्पन्न मिति",
-      "Automated export": "यो Mifos X ग्लोबल ड्यासबोर्डबाट स्वचालित निर्यात हो"
+      "Automated export": "यो Butagasi Sacco ग्लोबल ड्यासबोर्डबाट स्वचालित निर्यात हो"
     },
     "permissions": {
       "actions": {
@@ -6402,7 +6402,7 @@
       "expand": "प्रश्नहरू देखाउनुहोस्",
       "collapse": "प्रश्नहरू लुकाउनुहोस्"
     },
-    "brand": "Mifos X Copilot",
+    "brand": "Butagasi Sacco Copilot",
     "currentSession": "हालको सत्र",
     "newChat": "नयाँ कुराकानी",
     "close": "बन्द गर्नुहोस्",
@@ -6427,7 +6427,7 @@
       "send": "सन्देश पठाउनुहोस्",
       "stop": "उत्पादन रोक्नुहोस्"
     },
-    "disclaimer": "Mifos X Copilot ले जवाफ खोज्न मद्दत गर्छ। पैसा चल्ने कुनै पनि काममा तपाईंको स्वीकृति चाहिन्छ।",
+    "disclaimer": "Butagasi Sacco Copilot ले जवाफ खोज्न मद्दत गर्छ। पैसा चल्ने कुनै पनि काममा तपाईंको स्वीकृति चाहिन्छ।",
     "nav": {
       "recentChats": "हालैका कुराकानीहरू",
       "chat": "कुराकानी",
@@ -6462,7 +6462,7 @@
       "delete": "कुराकानी मेटाउनुहोस्"
     },
     "help": {
-      "capabilitiesTitle": "Mifos X Copilot ले के गर्न सक्छ",
+      "capabilitiesTitle": "Butagasi Sacco Copilot ले के गर्न सक्छ",
       "capabilities": {
         "lookup": "ग्राहक खोजेर प्रोफाइल देखाउने",
         "loans": "ऋण विवरण र भुक्तानी तालिका देखाउने",
@@ -6486,23 +6486,23 @@
       "confirmation": "पुष्टि"
     },
     "confirmWarning": "यसले वास्तविक पैसा चलाउँछ। विवरण जाँच गरेर मात्र पुष्टि गर्नुहोस्।",
-    "openAssistant": "Mifos X Copilot खोल्नुहोस्",
+    "openAssistant": "Butagasi Sacco Copilot खोल्नुहोस्",
     "launcher": {
-      "working": "Mifos X Copilot ले तपाईंको अनुरोधमा काम गर्दैछ। Copilot खोल्नुहोस्।",
-      "replying": "Mifos X Copilot जवाफ दिँदैछ। Copilot खोल्नुहोस्।"
+      "working": "Butagasi Sacco Copilot ले तपाईंको अनुरोधमा काम गर्दैछ। Copilot खोल्नुहोस्।",
+      "replying": "Butagasi Sacco Copilot जवाफ दिँदैछ। Copilot खोल्नुहोस्।"
     },
     "newChatTitle": "नयाँ कुराकानी",
     "errors": {
       "timedOut": "सहायकले जवाफ दिन धेरै समय लियो। कृपया पुनः प्रयास गर्नुहोस्।",
       "invalidLength": "सन्देश खाली छ वा धेरै लामो छ। कृपया छोटो पारेर फेरि प्रयास गर्नुहोस्।",
       "injectionBlocked": "सन्देश निर्देशन उल्लंघन गर्ने प्रयास जस्तो देखिन्छ, त्यसैले पठाइएन। कृपया फरक तरिकाले लेख्नुहोस्।",
-      "streamFailed": "Mifos X Copilot मा पुग्न सकिएन। कृपया फेरि प्रयास गर्नुहोस्।"
+      "streamFailed": "Butagasi Sacco Copilot मा पुग्न सकिएन। कृपया फेरि प्रयास गर्नुहोस्।"
     },
     "confirm": {
       "reference": "सन्दर्भ",
       "pendingAnnouncement": "यो कार्य चल्नुअघि विवरण जाँच गर्नुहोस्।"
     },
-    "assistantAvatarAlt": "Mifos X Copilot",
+    "assistantAvatarAlt": "Butagasi Sacco Copilot",
     "cardLabels": {
       "activationDate": "सक्रियता मिति",
       "activeLoans": "सक्रिय ऋणहरू",
@@ -6602,12 +6602,12 @@
       "share": "साझेदारी गर्नुहोस्"
     },
     "export": {
-      "heading": "Mifos Copilot को जवाफ",
+      "heading": "Butagasi Sacco Copilot को जवाफ",
       "question": "प्रश्न",
       "client": "ग्राहक",
       "askedBy": "सोध्ने",
-      "disclaimer": "Fineract अभिलेखबाट Mifos Copilot ले तयार गरेको। कारबाही गर्नुअघि स्रोत अभिलेखसँग मिलाएर हेर्नुहोस्।",
-      "shareTitle": "Mifos Copilot को जवाफ",
+      "disclaimer": "Fineract अभिलेखबाट Butagasi Sacco Copilot ले तयार गरेको। कारबाही गर्नुअघि स्रोत अभिलेखसँग मिलाएर हेर्नुहोस्।",
+      "shareTitle": "Butagasi Sacco Copilot को जवाफ",
       "copiedToClipboard": "जवाफ र लिंक क्लिपबोर्डमा प्रतिलिपि भयो",
       "failed": "फाइल बनाउन सकिएन। कृपया फेरि प्रयास गर्नुहोस्।",
       "fileNameFallback": "copilot",

@@ -84,14 +84,14 @@
               </div>
               <div class="kpi-info">
                 <span class="kpi-label">{{ 'labels.heading.Active Loans Portfolio' | translate }}</span>
-                <h3 class="kpi-value">${{ loansKpi.totalOutstanding | number: '1.0-0' }}</h3>
+                <h3 class="kpi-value">UGX {{ loansKpi.totalOutstanding | number: '1.0-0' }}</h3>
                 <div class="kpi-sub-stats">
                   <span class="sub-stat">
                     <strong>{{ loansKpi.activeCount | number }}</strong>
                     {{ 'labels.heading.Active Accounts' | translate }}
                   </span>
                   <span class="sub-stat avg-stat"
-                    >{{ 'labels.heading.Avg' | translate }}: ${{ loansKpi.avgLoanSize | number }}</span
+                    >{{ 'labels.heading.Avg' | translate }}: UGX {{ loansKpi.avgLoanSize | number }}</span
                   >
                 </div>
               </div>
@@ -104,7 +104,7 @@
               </div>
               <div class="kpi-info">
                 <span class="kpi-label">{{ 'labels.heading.Total Deposits Balance' | translate }}</span>
-                <h3 class="kpi-value">${{ savingsKpi.totalBalance | number: '1.0-0' }}</h3>
+                <h3 class="kpi-value">UGX {{ savingsKpi.totalBalance | number: '1.0-0' }}</h3>
                 <div class="kpi-sub-stats">
                   <span
                     class="sub-stat"
@@ -126,7 +126,7 @@
                     {{ 'labels.heading.Active Accounts' | translate }}
                   </span>
                   <span class="sub-stat avg-stat"
-                    >{{ 'labels.heading.Avg' | translate }}: ${{ savingsKpi.avgBalance | number: '1.0-0' }}</span
+                    >{{ 'labels.heading.Avg' | translate }}: UGX {{ savingsKpi.avgBalance | number: '1.0-0' }}</span
                   >
                 </div>
               </div>
@@ -139,7 +139,7 @@
               </div>
               <div class="kpi-info">
                 <span class="kpi-label">{{ 'labels.heading.Total Share Capital' | translate }}</span>
-                <h3 class="kpi-value">${{ sharesKpi.totalCapital | number: '1.0-0' }}</h3>
+                <h3 class="kpi-value">UGX {{ sharesKpi.totalCapital | number: '1.0-0' }}</h3>
                 <div class="kpi-sub-stats">
                   <span class="sub-stat">
                     <strong>{{ sharesKpi.activeCount | number }}</strong>
@@ -264,7 +264,7 @@
                     <th>{{ 'labels.heading.Transaction Type' | translate }}</th>
                     <th>{{ 'labels.heading.Category' | translate }}</th>
                     <th class="text-right">{{ 'labels.heading.24h / Period Count' | translate }}</th>
-                    <th class="text-right">{{ 'labels.heading.Total Volume ($)' | translate }}</th>
+                    <th class="text-right">{{ 'labels.heading.Total Volume (UGX)' | translate }}</th>
                     <th class="text-right">{{ 'labels.heading.Volume Share (%)' | translate }}</th>
                     <th class="text-right">{{ 'labels.heading.Trend' | translate }}</th>
                   </tr>
@@ -284,7 +284,7 @@
                         }}</span>
                       </td>
                       <td class="text-right font-mono font-medium">{{ item.count | number }}</td>
-                      <td class="text-right font-mono font-bold text-primary">${{ item.volume | number: '1.2-2' }}</td>
+                      <td class="text-right font-mono font-bold text-primary">UGX {{ item.volume | number: '1.2-2' }}</td>
                       <td class="text-right">
                         <div class="percentage-bar-cell">
                           <div class="progress-track">

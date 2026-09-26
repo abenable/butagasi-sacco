@@ -167,39 +167,39 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
 
   /** Business KPI Summary State */
   clientsKpi: BusinessKpiCard = {
-    total: 59,
-    active: 40,
-    pending: 19,
-    newThisMonth: 7,
-    activeRatio: 68
+    total: 0,
+    active: 0,
+    pending: 0,
+    newThisMonth: 0,
+    activeRatio: 0
   };
 
   loansKpi: LoansKpiCard = {
-    activeCount: 64,
-    totalDisbursed: 3980000,
-    totalOutstanding: 3202108,
-    avgLoanSize: 50033,
-    currency: 'USD'
+    activeCount: 0,
+    totalDisbursed: 0,
+    totalOutstanding: 0,
+    avgLoanSize: 0,
+    currency: 'UGX'
   };
 
   savingsKpi: SavingsKpiCard = {
-    activeCount: 57,
-    totalBalance: 384800,
-    avgBalance: 6750,
-    savingsCount: 37,
-    savingsBalance: 164800,
-    fixedCount: 12,
-    fixedBalance: 156000,
-    recurringCount: 8,
-    recurringBalance: 64000,
-    currency: 'USD'
+    activeCount: 0,
+    totalBalance: 0,
+    avgBalance: 0,
+    savingsCount: 0,
+    savingsBalance: 0,
+    fixedCount: 0,
+    fixedBalance: 0,
+    recurringCount: 0,
+    recurringBalance: 0,
+    currency: 'UGX'
   };
 
   sharesKpi: SharesKpiCard = {
-    activeCount: 1,
-    totalCapital: 42500,
-    totalSubscribed: 120,
-    currency: 'USD'
+    activeCount: 0,
+    totalCapital: 0,
+    totalSubscribed: 0,
+    currency: 'UGX'
   };
 
   /** Executed Transaction Types Summary */
@@ -436,31 +436,27 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
 
     const clients$ = this.http
       .get<any>(`/clients${officeParam}`)
-      .pipe(catchError(() => of({ totalFilteredRecords: 59, pageItems: [] })));
+      .pipe(catchError(() => of({ totalFilteredRecords: 0, pageItems: [] })));
 
     const loans$ = this.http
       .get<any>(`/loans${officeParam}`)
-      .pipe(catchError(() => of({ totalFilteredRecords: 64, pageItems: [] })));
+      .pipe(catchError(() => of({ totalFilteredRecords: 0, pageItems: [] })));
 
     const savings$ = this.http
       .get<any>(`/savingsaccounts${officeParam}`)
-      .pipe(catchError(() => of({ totalFilteredRecords: 37, pageItems: [] })));
+      .pipe(catchError(() => of({ totalFilteredRecords: 0, pageItems: [] })));
 
     const fixedDeposits$ = this.http
       .get<any>(`/fixeddepositaccounts${officeParam}`)
-      .pipe(catchError(() => of({ totalFilteredRecords: 12, pageItems: [] })));
+      .pipe(catchError(() => of({ totalFilteredRecords: 0, pageItems: [] })));
 
     const recurringDeposits$ = this.http
       .get<any>(`/recurringdepositaccounts${officeParam}`)
-      .pipe(catchError(() => of({ totalFilteredRecords: 8, pageItems: [] })));
+      .pipe(catchError(() => of({ totalFilteredRecords: 0, pageItems: [] })));
 
     const shares$ = this.http
       .get<any>(`/accounts/share${officeParam}`)
-      .pipe(catchError(() => of({ totalFilteredRecords: 1, pageItems: [] })));
-
-    const journalEntries$ = this.http
-      .get<any>(`/journalentries?limit=50`)
-      .pipe(catchError(() => of({ totalFilteredRecords: 307, pageItems: [] })));
+      .pipe(catchError(() => of({ totalFilteredRecords: 0, pageItems: [] })));
 
     forkJoin({
       clients: clients$,
@@ -468,8 +464,7 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
       savings: savings$,
       fixedDeposits: fixedDeposits$,
       recurringDeposits: recurringDeposits$,
-      shares: shares$,
-      journal: journalEntries$
+      shares: shares$
     })
       .pipe(
         finalize(() => {
@@ -478,12 +473,12 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
         })
       )
       .subscribe({
-        next: ({ clients, loans, savings, fixedDeposits, recurringDeposits, shares, journal }) => {
-          this.processClientsData(clients, officeId);
-          this.processLoansData(loans, officeId);
-          this.processDepositsData(savings, fixedDeposits, recurringDeposits, officeId);
-          this.processSharesData(shares, officeId);
-          this.processTransactionsData(journal, loans, savings);
+        next: ({ clients, loans, savings, fixedDeposits, recurringDeposits, shares }) => {
+          this.processClientsData(clients);
+          this.processLoansData(loans);
+          this.processDepositsData(savings, fixedDeposits, recurringDeposits);
+          this.processSharesData(shares);
+          this.processTransactionsData();
           this.updateLastRefreshTime();
           this.isLoading = false;
           this.cdr.detectChanges();
@@ -513,19 +508,16 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
       });
   }
 
-  private processClientsData(data: any, officeId: number): void {
+  private processClientsData(data: any): void {
     const items = Array.isArray(data) ? data : data?.pageItems || [];
-    let total = data && typeof data.totalFilteredRecords === 'number' ? data.totalFilteredRecords : items.length;
-    let active = items.filter((c: any) => c.status?.value === 'Active' || c.active === true).length;
-
-    // Scale baseline by office if no office-filtered records in demo DB
-    if (total === 0) {
-      const scaleFactor = officeId === 0 ? 1 : officeId === 1 ? 0.65 : 0.35;
-      total = Math.round(59 * scaleFactor);
-      active = Math.round(40 * scaleFactor);
-    } else if (active === 0 && total > 0) {
-      active = Math.round(total * 0.68);
-    }
+    const total = data && typeof data.totalFilteredRecords === 'number' ? data.totalFilteredRecords : items.length;
+    const active = items.filter((c: any) => c.status?.value === 'Active' || c.active === true).length;
+    const now = new Date();
+    // Fineract returns activationDate as [year, month, day]
+    const newThisMonth = items.filter((c: any) => {
+      const d = c.activationDate;
+      return Array.isArray(d) && d[0] === now.getFullYear() && d[1] === now.getMonth() + 1;
+    }).length;
 
     const pending = Math.max(0, total - active);
 
@@ -533,42 +525,34 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
       total: total,
       active: active,
       pending: pending,
-      newThisMonth: Math.round(active * 0.18) || 7,
-      activeRatio: total > 0 ? Math.round((active / total) * 100) : 68
+      newThisMonth: newThisMonth,
+      activeRatio: total > 0 ? Math.round((active / total) * 100) : 0
     };
   }
 
-  private processLoansData(data: any, officeId: number): void {
+  private processLoansData(data: any): void {
     const items = Array.isArray(data) ? data : data?.pageItems || [];
-    let totalCount = data && typeof data.totalFilteredRecords === 'number' ? data.totalFilteredRecords : items.length;
+    const totalCount = data && typeof data.totalFilteredRecords === 'number' ? data.totalFilteredRecords : items.length;
     let disbursedSum = 0;
     let outstandingSum = 0;
 
     items.forEach((l: any) => {
       if (l.principal) disbursedSum += Number(l.principal);
       if (l.summary?.totalOutstanding) outstandingSum += Number(l.summary.totalOutstanding);
-      else if (l.principal) outstandingSum += Number(l.principal) * 0.8;
     });
-
-    if (totalCount === 0 || disbursedSum === 0) {
-      const scaleFactor = officeId === 0 ? 1 : officeId === 1 ? 0.65 : 0.35;
-      totalCount = Math.round(64 * scaleFactor);
-      disbursedSum = Math.round(3980000 * scaleFactor);
-      outstandingSum = Math.round(3202108 * scaleFactor);
-    }
 
     this.loansKpi = {
       activeCount: totalCount,
       totalDisbursed: disbursedSum,
       totalOutstanding: outstandingSum,
-      avgLoanSize: totalCount > 0 ? Math.round(outstandingSum / totalCount) : 50033,
-      currency: items[0]?.currency?.code || 'USD'
+      avgLoanSize: totalCount > 0 ? Math.round(outstandingSum / totalCount) : 0,
+      currency: items[0]?.currency?.code || 'UGX'
     };
   }
 
-  private processDepositsData(savingsData: any, fixedData: any, recurringData: any, officeId: number): void {
+  private processDepositsData(savingsData: any, fixedData: any, recurringData: any): void {
     const savingsItems = Array.isArray(savingsData) ? savingsData : savingsData?.pageItems || [];
-    let savingsCount =
+    const savingsCount =
       savingsData && typeof savingsData.totalFilteredRecords === 'number'
         ? savingsData.totalFilteredRecords
         : savingsItems.length;
@@ -578,7 +562,7 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
     });
 
     const fixedItems = Array.isArray(fixedData) ? fixedData : fixedData?.pageItems || [];
-    let fixedCount =
+    const fixedCount =
       fixedData && typeof fixedData.totalFilteredRecords === 'number'
         ? fixedData.totalFilteredRecords
         : fixedItems.length;
@@ -589,7 +573,7 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
     });
 
     const recurringItems = Array.isArray(recurringData) ? recurringData : recurringData?.pageItems || [];
-    let recurringCount =
+    const recurringCount =
       recurringData && typeof recurringData.totalFilteredRecords === 'number'
         ? recurringData.totalFilteredRecords
         : recurringItems.length;
@@ -599,147 +583,50 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
       recurringBalance += amt;
     });
 
-    if (savingsCount === 0 || savingsBalance === 0) {
-      const scaleFactor = officeId === 0 ? 1 : officeId === 1 ? 0.65 : 0.35;
-      savingsCount = Math.round(37 * scaleFactor);
-      savingsBalance = Math.round(164800 * scaleFactor);
-    }
-
-    if (fixedCount === 0 || fixedBalance === 0) {
-      const scaleFactor = officeId === 0 ? 1 : officeId === 1 ? 0.65 : 0.35;
-      fixedCount = Math.round(12 * scaleFactor);
-      fixedBalance = Math.round(156000 * scaleFactor);
-    }
-
-    if (recurringCount === 0 || recurringBalance === 0) {
-      const scaleFactor = officeId === 0 ? 1 : officeId === 1 ? 0.65 : 0.35;
-      recurringCount = Math.round(8 * scaleFactor);
-      recurringBalance = Math.round(64000 * scaleFactor);
-    }
-
     const totalAccounts = savingsCount + fixedCount + recurringCount;
     const totalBalance = savingsBalance + fixedBalance + recurringBalance;
 
     this.savingsKpi = {
       activeCount: totalAccounts,
       totalBalance: totalBalance,
-      avgBalance: totalAccounts > 0 ? Math.round(totalBalance / totalAccounts) : 6750,
+      avgBalance: totalAccounts > 0 ? Math.round(totalBalance / totalAccounts) : 0,
       savingsCount: savingsCount,
       savingsBalance: savingsBalance,
       fixedCount: fixedCount,
       fixedBalance: fixedBalance,
       recurringCount: recurringCount,
       recurringBalance: recurringBalance,
-      currency: savingsItems[0]?.currency?.code || 'USD'
+      currency: savingsItems[0]?.currency?.code || 'UGX'
     };
   }
 
-  private processSharesData(data: any, officeId: number): void {
+  private processSharesData(data: any): void {
     const items = Array.isArray(data) ? data : data?.pageItems || [];
-    let totalCount = data && typeof data.totalFilteredRecords === 'number' ? data.totalFilteredRecords : items.length;
+    const totalCount = data && typeof data.totalFilteredRecords === 'number' ? data.totalFilteredRecords : items.length;
     let capitalSum = 0;
+    let subscribed = 0;
 
     items.forEach((sh: any) => {
-      if (sh.totalApprovedShares && sh.unitPrice) {
-        capitalSum += Number(sh.totalApprovedShares) * Number(sh.unitPrice);
+      if (sh.totalApprovedShares) {
+        subscribed += Number(sh.totalApprovedShares);
+        if (sh.unitPrice) capitalSum += Number(sh.totalApprovedShares) * Number(sh.unitPrice);
       }
     });
-
-    if (totalCount === 0 || capitalSum === 0) {
-      const scaleFactor = officeId === 0 ? 1 : officeId === 1 ? 1 : 0.5;
-      totalCount = Math.max(1, Math.round(1 * scaleFactor));
-      capitalSum = Math.round(42500 * scaleFactor);
-    }
 
     this.sharesKpi = {
       activeCount: totalCount,
       totalCapital: capitalSum,
-      totalSubscribed: 120,
-      currency: 'USD'
+      totalSubscribed: subscribed,
+      currency: items[0]?.currency?.code || 'UGX'
     };
   }
 
-  private processTransactionsData(journal: any, loans: any, savings: any): void {
-    const loanDisbursed = this.loansKpi.totalDisbursed * 0.45;
-    const loanRepayments = this.loansKpi.totalDisbursed * 0.35;
-    const savingsDeposits = this.savingsKpi.totalBalance * 0.65;
-    const savingsWithdrawals = this.savingsKpi.totalBalance * 0.25;
-    const shareSubscriptions = this.sharesKpi.totalCapital * 0.5;
-    const feesAndCharges = (loanDisbursed + savingsDeposits) * 0.035;
-
-    const rawTxns: TransactionTypeMetric[] = [
-      {
-        type: 'Loan Disbursements',
-        category: 'Loan',
-        icon: 'hand-holding-usd',
-        count: Math.round(this.loansKpi.activeCount * 0.4) || 38,
-        volume: loanDisbursed,
-        trend: '+12.4%',
-        percentage: 0,
-        badgeClass: 'badge-loan'
-      },
-      {
-        type: 'Loan Repayments',
-        category: 'Loan',
-        icon: 'receipt',
-        count: Math.round(this.loansKpi.activeCount * 1.8) || 165,
-        volume: loanRepayments,
-        trend: '+8.1%',
-        percentage: 0,
-        badgeClass: 'badge-loan'
-      },
-      {
-        type: 'Savings Deposits',
-        category: 'Savings',
-        icon: 'piggy-bank',
-        count: Math.round(this.savingsKpi.activeCount * 2.2) || 280,
-        volume: savingsDeposits,
-        trend: '+15.3%',
-        percentage: 0,
-        badgeClass: 'badge-savings'
-      },
-      {
-        type: 'Savings Withdrawals',
-        category: 'Savings',
-        icon: 'money-bill-wave',
-        count: Math.round(this.savingsKpi.activeCount * 0.9) || 115,
-        volume: savingsWithdrawals,
-        trend: '-3.2%',
-        percentage: 0,
-        badgeClass: 'badge-savings'
-      },
-      {
-        type: 'Share Capital Subscriptions',
-        category: 'Share',
-        icon: 'chart-pie',
-        count: Math.round(this.sharesKpi.activeCount * 0.6) || 22,
-        volume: shareSubscriptions,
-        trend: '+5.7%',
-        percentage: 0,
-        badgeClass: 'badge-shares'
-      },
-      {
-        type: 'Fee & Penalty Collections',
-        category: 'Accounting',
-        icon: 'coins',
-        count: Math.round(this.loansKpi.activeCount * 0.8) || 74,
-        volume: feesAndCharges,
-        trend: '+2.0%',
-        percentage: 0,
-        badgeClass: 'badge-accounting'
-      }
-    ];
-
-    const totalVol = rawTxns.reduce((acc, curr) => acc + curr.volume, 0);
-    const totalCnt = rawTxns.reduce((acc, curr) => acc + curr.count, 0);
-
-    this.totalTxnVolume = totalVol;
-    this.totalTxnCount = totalCnt;
-
-    this.transactionTypes = rawTxns.map((item) => ({
-      ...item,
-      percentage: totalVol > 0 ? Math.round((item.volume / totalVol) * 100) : 0
-    }));
+  // ponytail: no Fineract endpoint gives per-type transaction volumes; left empty instead of synthesized.
+  // Wire to a custom SQL report (Admin > Reports) when Butagasi needs this table.
+  private processTransactionsData(): void {
+    this.transactionTypes = [];
+    this.totalTxnVolume = 0;
+    this.totalTxnCount = 0;
   }
 
   /**
@@ -868,7 +755,7 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
                 callbacks: {
                   label: (context: any) => {
                     const val = Number(context.parsed || 0);
-                    return ` ${context.label}: $${val.toLocaleString()}`;
+                    return ` ${context.label}: UGX ${val.toLocaleString()}`;
                   }
                 }
               }
@@ -894,20 +781,6 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
         const legendColor = isDark ? '#e2e8f0' : '#475569';
         const gridColor = isDark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.06)';
 
-        const baseDisbursed = this.loansKpi.totalDisbursed * 0.15 || 50000;
-        const baseDeposits = this.savingsKpi.totalBalance * 0.25 || 35000;
-        const baseRepayments = this.loansKpi.totalDisbursed * 0.12 || 40000;
-
-        const multipliers = [
-          0.65,
-          0.78,
-          0.72,
-          0.88,
-          0.95,
-          1.1,
-          1.05,
-          1.18
-        ];
         const isLine = this.trendChartType === 'line';
 
         const monthKeys = [
@@ -922,9 +795,9 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
         ];
         const chartLabels = monthKeys.map((m) => this.translate.instant('labels.heading.' + m) || m);
 
-        const loansLabel = `${this.translate.instant('labels.heading.Loans Disbursed') || 'Loans Disbursed'} ($)`;
-        const savingsLabel = `${this.translate.instant('labels.heading.Savings Deposits') || 'Savings Deposits'} ($)`;
-        const repaymentsLabel = `${this.translate.instant('labels.heading.Repayments Received') || 'Repayments Received'} ($)`;
+        const loansLabel = `${this.translate.instant('labels.heading.Loans Disbursed') || 'Loans Disbursed'} (UGX)`;
+        const savingsLabel = `${this.translate.instant('labels.heading.Savings Deposits') || 'Savings Deposits'} (UGX)`;
+        const repaymentsLabel = `${this.translate.instant('labels.heading.Repayments Received') || 'Repayments Received'} (UGX)`;
 
         this.businessTrendChart = new Chart(ctx, {
           type: this.trendChartType,
@@ -933,7 +806,7 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
             datasets: [
               {
                 label: loansLabel,
-                data: multipliers.map((m) => Math.round(baseDisbursed * m)),
+                data: [] as number[],
                 backgroundColor: isLine ? 'rgba(16, 185, 129, 0.15)' : '#10B981',
                 borderColor: '#10B981',
                 borderWidth: isLine ? 2.5 : 0,
@@ -945,7 +818,7 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
               },
               {
                 label: savingsLabel,
-                data: multipliers.map((m) => Math.round(baseDeposits * (m * 0.9 + 0.1))),
+                data: [] as number[],
                 backgroundColor: isLine ? 'rgba(59, 130, 246, 0.15)' : '#3B82F6',
                 borderColor: '#3B82F6',
                 borderWidth: isLine ? 2.5 : 0,
@@ -957,7 +830,7 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
               },
               {
                 label: repaymentsLabel,
-                data: multipliers.map((m) => Math.round(baseRepayments * (m * 0.85 + 0.15))),
+                data: [] as number[],
                 backgroundColor: isLine ? 'rgba(139, 92, 246, 0.15)' : '#8B5CF6',
                 borderColor: '#8B5CF6',
                 borderWidth: isLine ? 2.5 : 0,
@@ -981,7 +854,7 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
                 grid: { color: gridColor },
                 ticks: {
                   color: textColor,
-                  callback: (value: any) => `$${Number(value).toLocaleString()}`
+                  callback: (value: any) => `UGX ${Number(value).toLocaleString()}`
                 }
               }
             },
@@ -995,7 +868,7 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
               },
               tooltip: {
                 callbacks: {
-                  label: (context: any) => ` ${context.dataset.label}: $${Number(context.parsed.y).toLocaleString()}`
+                  label: (context: any) => ` ${context.dataset.label}: UGX ${Number(context.parsed.y).toLocaleString()}`
                 }
               }
             }
@@ -1018,21 +891,6 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
     }
 
     if (this.businessTrendChart) {
-      const baseDisbursed = this.loansKpi.totalDisbursed * 0.15 || 50000;
-      const baseDeposits = this.savingsKpi.totalBalance * 0.25 || 35000;
-      const baseRepayments = this.loansKpi.totalDisbursed * 0.12 || 40000;
-
-      const multipliers = [
-        0.65,
-        0.78,
-        0.72,
-        0.88,
-        0.95,
-        1.1,
-        1.05,
-        1.18
-      ];
-
       const monthKeys = [
         'Jan',
         'Feb',
@@ -1045,17 +903,12 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
       ];
       this.businessTrendChart.data.labels = monthKeys.map((m) => this.translate.instant('labels.heading.' + m) || m);
 
-      this.businessTrendChart.data.datasets[0].label = `${this.translate.instant('labels.heading.Loans Disbursed') || 'Loans Disbursed'} ($)`;
-      this.businessTrendChart.data.datasets[1].label = `${this.translate.instant('labels.heading.Savings Deposits') || 'Savings Deposits'} ($)`;
-      this.businessTrendChart.data.datasets[2].label = `${this.translate.instant('labels.heading.Repayments Received') || 'Repayments Received'} ($)`;
+      this.businessTrendChart.data.datasets[0].label = `${this.translate.instant('labels.heading.Loans Disbursed') || 'Loans Disbursed'} (UGX)`;
+      this.businessTrendChart.data.datasets[1].label = `${this.translate.instant('labels.heading.Savings Deposits') || 'Savings Deposits'} (UGX)`;
+      this.businessTrendChart.data.datasets[2].label = `${this.translate.instant('labels.heading.Repayments Received') || 'Repayments Received'} (UGX)`;
 
-      this.businessTrendChart.data.datasets[0].data = multipliers.map((m) => Math.round(baseDisbursed * m));
-      this.businessTrendChart.data.datasets[1].data = multipliers.map((m) =>
-        Math.round(baseDeposits * (m * 0.9 + 0.1))
-      );
-      this.businessTrendChart.data.datasets[2].data = multipliers.map((m) =>
-        Math.round(baseRepayments * (m * 0.85 + 0.15))
-      );
+      // ponytail: no monthly flow endpoint in Fineract; empty until wired to a report
+      this.businessTrendChart.data.datasets.forEach((ds: any) => (ds.data = []));
       this.businessTrendChart.update();
     }
   }

@@ -85,7 +85,7 @@
       "reason": "Důvod"
     }
   },
-  "APP_NAME": "Mifos® X WebApp",
+  "APP_NAME": "Butagasi Sacco",
   "Logged in as": "Přihlášen jako",
   "Remember me": "Zapamatuj si mě",
   "error.resource.notImplemented.type": "Nenaimplementovaná chyba",
@@ -582,7 +582,7 @@
   "labels": {
     "version": {
       "Tenant": "Instanci",
-      "Mifos WebApp": "Mifos® WebApp",
+      "Mifos WebApp": "Butagasi Sacco",
       "Apache Fineract": "Apache Fineract®",
       "Server": "Server",
       "Username": "Uživatelské jméno",
@@ -1401,7 +1401,7 @@
       "Assets": "Aktiva",
       "Assets / Liability": "Aktiva / pasiva",
       "Assign Payout": "Přiřadit výplatu",
-      "Assign to Mifos Client": "Přiřadit klientovi Mifos",
+      "Assign to Mifos Client": "Přiřadit klientovi Butagasi Sacco",
       "Audit Trails": "Záznamy auditu",
       "Average Gap": "Průměrný Rozdíl",
       "Balance": "Zůstatek",
@@ -1450,7 +1450,7 @@
       "Configure Fund Sources for Payment Channels": "Nakonfigurujte zdroje prostředků pro platební kanály",
       "Configure Maker Checker Tasks": "Konfigurace úloh Maker Checker",
       "Configure Maker-Checker Tasks": "Konfigurace úloh Maker-Checker",
-      "Configure Mifos Organization Needs": "Následující průvodce vám pomůže nakonfigurovat Mifos® podle potřeb vaší organizace.",
+      "Configure Mifos Organization Needs": "Následující průvodce vám pomůže nakonfigurovat Butagasi Sacco podle potřeb vaší organizace.",
       "Confirm Payment": "Potvrdit platbu",
       "Confirm Payout": "Potvrdit výplatu",
       "Confirm Transaction Details": "Potvrdit podrobnosti transakce",
@@ -1580,7 +1580,7 @@
       "Last Active": "poslední aktivní",
       "Liabilities": "Závazky",
       "List of Users with their details": "Seznam uživatelů s jejich podrobnostmi",
-      "List of all codes in the Mifos system": "Seznam všech kódů v systému Mifos® pro vaši organizaci.",
+      "List of all codes in the Mifos system": "Seznam všech kódů v systému Butagasi Sacco pro vaši organizaci.",
       "List of all currently available data tables": "Seznam všech aktuálně dostupných datových tabulek.",
       "List of all currently available reports": "Seznam všech aktuálně dostupných přehledů. Pro více podrobností klikněte",
       "List of all maker checker tasks": "Seznam všech úloh maker checker. Pro více podrobností klikněte",
@@ -1856,7 +1856,7 @@
       "View Transaction": "Zobrazit Transakci",
       "View Transfer": "Zobrazit Převod",
       "Waive Charge": "Zřeknutí se poplatku",
-      "Welcome to Mifos": "Vítejte v destinaci Mifos®",
+      "Welcome to Mifos": "Vítejte v destinaci Butagasi Sacco",
       "Why Open Source": "Proč Open Source",
       "Withdraw Money From Saving Account": "Výběr peněz ze spořicího účtu",
       "Withhold Tax": "Srážková daň",
@@ -1877,7 +1877,7 @@
       "Shares": "Akcie",
       "Transaction Type": "Typ transakce",
       "Category": "Kategorie",
-      "Total Volume ($)": "Celkový objem ($)",
+      "Total Volume (UGX)": "Celkový objem (UGX)",
       "Trend": "Trend",
       "Module": "Modul",
       "Global Financial": "Globální finance",
@@ -4398,7 +4398,7 @@
       "Accounting": "Účetnictví",
       "Accounting Closures": "Účetní uzávěrky",
       "Accounting Rules": "Účetní řád",
-      "Accounting to journal entries": "V Mifos X můžete uzavřít účetnictví do deníkových záznamů. Uzávěrky lze aplikovat na všechny pobočky nebo na každou pobočku samostatně. Pro organizace je důležité pravidelně uzavírat účetnictví, aby se zabránilo transakcím, které ovlivňují účetní knihy.",
+      "Accounting to journal entries": "V Butagasi Sacco můžete uzavřít účetnictví do deníkových záznamů. Uzávěrky lze aplikovat na všechny pobočky nebo na každou pobočku samostatně. Pro organizace je důležité pravidelně uzavírat účetnictví, aby se zabránilo transakcím, které ovlivňují účetní knihy.",
       "Accounts linked to Financial Activities": "Účty propojené s Finančními činnostmi jsou namapované účty, které jsou potřebné k provedení účetní transakce generující systém.",
       "Accrues income, expenses and liabilities": "Časově rozlišuje výnosy, náklady a závazky k uvedenému datu",
       "Activated": "Aktivováno",
@@ -4499,7 +4499,7 @@
       "Committee": "Výbor",
       "Compliant": "V Souladu",
       "Configurations": "Konfigurace",
-      "Configurations page allows you to further customize": "Stránka Konfigurace vám umožňuje dále přizpůsobit způsob, jakým vaše organizace používá systém Mifos.",
+      "Configurations page allows you to further customize": "Stránka Konfigurace vám umožňuje dále přizpůsobit způsob, jakým vaše organizace používá systém Butagasi Sacco.",
       "Configure Maker Checker Tasks": "Konfigurace úloh Maker Checker",
       "Copy": "kopírovat",
       "Copy Account Number": "Zkopírovat číslo účtu",
@@ -4591,7 +4591,7 @@
       "Define or modify Maker Checker tasks": "Definujte nebo upravte úlohy Maker Checker",
       "Define or modify entity to entity mappings": "Definujte nebo upravte mapování entity na entity",
       "Define or modify roles and associated permissions": "Definujte nebo upravte role a související oprávnění",
-      "Define what currencies interactions within the Mifos X system": "Tato část umožňuje organizaci definovat, jaké měny budou používány během jejich interakcí v rámci systému Mifos X.",
+      "Define what currencies interactions within the Mifos X system": "Tato část umožňuje organizaci definovat, jaké měny budou používány během jejich interakcí v rámci systému Butagasi Sacco.",
       "Defines rules for taking multiple rules": "Definuje pravidla pro přijímání více pravidel",
       "Delete clients signature": "Jste si jisti, že chcete smazat tento klientský podpis?",
       "Delinquency Buckets": "Delikvence kbelíky",
@@ -4617,7 +4617,7 @@
       "Download share accounts template and upload share account excel files": "Stáhněte si šablonu sdílených účtů a nahrajte excelové soubory sdíleného účtu",
       "Download, Upload Offices Template": "Stáhnout, nahrát šablonu kanceláře",
       "Dropdown self service user administrative portal": "Rozbalovací nabídka poskytuje přístup k samoobslužnému portálu pro správu uživatelů, konfiguraci aplikací a správě úloh.",
-      "Dropdown system reports": "Rozbalovací nabídka poskytuje přístup ke všem typům systémových zpráv včetně výchozích zpráv poskytovaných Mifos a systémových zpráv, které budou vyvíjeny organizací.",
+      "Dropdown system reports": "Rozbalovací nabídka poskytuje přístup ke všem typům systémových zpráv včetně výchozích zpráv poskytovaných Butagasi Sacco a systémových zpráv, které budou vyvíjeny organizací.",
       "Easy way to reassign all the loan": "Snadný způsob, jak přeřadit veškerou půjčku z jednoho LO do jiného LO",
       "Edit": "Upravit",
       "Edit Account Number Preference": "Upravit předvolbu čísla účtu",
@@ -4724,7 +4724,7 @@
       "Fund": "Fond",
       "Fund Mapping": "Mapování fondů",
       "Funds are associated with loans": "Finanční prostředky jsou spojeny s půjčkami",
-      "GLAccount Balances Application": "To usnadňuje organizaci, která se chce přestěhovat do Mifos, převést zůstatky účtů GL (z jejich stávající účetní aplikace nebo manuálního systému) do Mifos X Accounting.",
+      "GLAccount Balances Application": "To usnadňuje organizaci, která se chce přestěhovat do Butagasi Sacco, převést zůstatky účtů GL (z jejich stávající účetní aplikace nebo manuálního systému) do Butagasi Sacco Accounting.",
       "GSIM Account View": "Zobrazení účtu GSIM",
       "Gap": "Rozdíl",
       "General": "Všeobecné",
@@ -4830,7 +4830,7 @@
       "Manual journal entry transactions recorded in a journal": "Transakce ručního zápisu do deníku zaznamenané v deníku",
       "Message Gateway": "Brána zpráv",
       "Mifos Initiative": "Iniciativa Mifos®",
-      "Mifos X data-tables allow the user to add custom fields": "Tabulky dat Mifos X umožňují uživateli přidat vlastní pole kromě vestavěných polí do profilu klienta, úvěrového/spořicího účtu, skupiny, centra nebo kanceláře.",
+      "Mifos X data-tables allow the user to add custom fields": "Tabulky dat Butagasi Sacco umožňují uživateli přidat vlastní pole kromě vestavěných polí do profilu klienta, úvěrového/spořicího účtu, skupiny, centra nebo kanceláře.",
       "Migrate Opening Balances": "Migrujte úvodní zůstatky",
       "Mild": "Mírný",
       "Missing required information. Please try again.": "Chybí povinné informace. Zkuste to prosím znovu.",
@@ -4940,7 +4940,7 @@
       "Revert this transaction?": "Opravdu chcete tuto transakci vrátit?",
       "Review the transaction and recipient details below, then assign the payout.": "Zkontrolujte níže uvedené údaje o transakci a příjemci a poté přiřaďte výplatu.",
       "Roles and Permissions": "Role a oprávnění",
-      "Roles and Permissions allow the administrator to control access": "Role a oprávnění umožňují správci řídit přístup k Mifos na základě toho, jaké role jsou přiřazeny uživatelům a jaká oprávnění jsou přiřazena rolím.",
+      "Roles and Permissions allow the administrator to control access": "Role a oprávnění umožňují správci řídit přístup k Butagasi Sacco na základě toho, jaké role jsou přiřazeny uživatelům a jaká oprávnění jsou přiřazena rolím.",
       "Rows": "Řádky",
       "S3 Amazon Service Configuration": "Konfigurace služby S3 Amazon",
       "SMS": "SMS",
@@ -4962,7 +4962,7 @@
       "Scheduler Jobs can set batch jobs": "Pomocí Scheduler Jobs můžete nastavit, aby se dávkové úlohy dokončovaly v pravidelných intervalech. Na této stránce můžete naplánovat, upravit nebo odstranit úlohy.",
       "Search": "Vyhledávání",
       "Search Journal Entry": "Vyhledat položku deníku",
-      "Search and assign this beneficiary to an existing Mifos client account": "Vyhledejte a přiřaďte tohoto příjemce k existujícímu účtu klienta Mifos",
+      "Search and assign this beneficiary to an existing Mifos client account": "Vyhledejte a přiřaďte tohoto příjemce k existujícímu účtu klienta Butagasi Sacco",
       "Search bar to filter fixed deposit products.": "Vyhledávací pole pro filtrování produktů s pevným vkladem.",
       "Search by Text": "Vyhledávání podle textu",
       "Search by user": "Hledat uživatelem",
@@ -5026,7 +5026,7 @@
       "Template I am trying to use": "Toto je šablona, ​​kterou se snažím použít. Je to v pořádku?",
       "Templates": "Šablony",
       "Tenant": "Nájemce",
-      "The Chart of Accounts - General Ledger Setup": "Účtová osnova - Nastavení hlavní knihy vám umožňuje organizovat různé účty v Mifos X.",
+      "The Chart of Accounts - General Ledger Setup": "Účtová osnova - Nastavení hlavní knihy vám umožňuje organizovat různé účty v Butagasi Sacco.",
       "The report request": "Požadavek na zprávu byl odeslán a zpráva bude exportována do úložiště souborů",
       "The usage of stronger passwords": "Definujte standardy pro vynucení používání silnějších hesel",
       "These are predefined postings": "Jedná se o předdefinované příspěvky",
@@ -5055,7 +5055,7 @@
       "Transactions": "Transakce",
       "Triggered": "Spuštěno",
       "Two Factor Authentication": "Dvoufaktorová autentizace",
-      "Two types of charges—fees and penalties": "Mifos podporuje dva typy poplatků – poplatky a sankce. Poplatky jsou účtovány za služby – například členské poplatky, poplatky za vyplacení půjčky, poplatky za výběr. Sankce jsou účtovány s cílem odradit klienty od odchýlení se od podmínek produktu",
+      "Two types of charges—fees and penalties": "Butagasi Sacco podporuje dva typy poplatků – poplatky a sankce. Poplatky jsou účtovány za služby – například členské poplatky, poplatky za vyplacení půjčky, poplatky za výběr. Sankce jsou účtovány s cílem odradit klienty od odchýlení se od podmínek produktu",
       "Two-factor authentication configuration": "Nastavení konfigurace dvoufaktorové autentizace",
       "TXN Loans": "Transakce půjček",
       "TXN Savings": "Transakce úspor",
@@ -5531,7 +5531,7 @@
       "Closed": "Uzavřeno",
       "Dashboard Export": "Export přehledu",
       "Generated on": "Vygenerováno",
-      "Automated export": "Toto je automatický export z globálního přehledu Mifos X"
+      "Automated export": "Toto je automatický export z globálního přehledu Butagasi Sacco"
     },
     "permissions": {
       "actions": {
@@ -6404,7 +6404,7 @@
       "expand": "Zobrazit otázky",
       "collapse": "Skrýt otázky"
     },
-    "brand": "Mifos X Copilot",
+    "brand": "Butagasi Sacco Copilot",
     "currentSession": "Aktuální relace",
     "newChat": "Nový chat",
     "close": "Zavřít",
@@ -6429,7 +6429,7 @@
       "send": "Odeslat zprávu",
       "stop": "Zastavit generování"
     },
-    "disclaimer": "Mifos X Copilot vám pomáhá najít odpovědi. Vše, co pohybuje penězi, stále vyžaduje vaše schválení.",
+    "disclaimer": "Butagasi Sacco Copilot vám pomáhá najít odpovědi. Vše, co pohybuje penězi, stále vyžaduje vaše schválení.",
     "nav": {
       "recentChats": "Nedávné chaty",
       "chat": "Chat",
@@ -6464,7 +6464,7 @@
       "delete": "Smazat konverzaci"
     },
     "help": {
-      "capabilitiesTitle": "Co Mifos X Copilot umí",
+      "capabilitiesTitle": "Co Butagasi Sacco Copilot umí",
       "capabilities": {
         "lookup": "Najít klienta a zobrazit jeho profil",
         "loans": "Zobrazit detaily úvěru a splátkový kalendář",
@@ -6488,23 +6488,23 @@
       "confirmation": "Potvrzení"
     },
     "confirmWarning": "Tato akce pohybuje skutečnými penězi. Zkontrolujte údaje a potvrďte.",
-    "openAssistant": "Otevřít Mifos X Copilot",
+    "openAssistant": "Otevřít Butagasi Sacco Copilot",
     "launcher": {
-      "working": "Mifos X Copilot pracuje na vašem požadavku. Otevřít Copilot.",
-      "replying": "Mifos X Copilot odpovídá. Otevřít Copilot."
+      "working": "Butagasi Sacco Copilot pracuje na vašem požadavku. Otevřít Copilot.",
+      "replying": "Butagasi Sacco Copilot odpovídá. Otevřít Copilot."
     },
     "newChatTitle": "Nová konverzace",
     "errors": {
       "timedOut": "Asistent odpovídal příliš dlouho. Zkuste to prosím znovu.",
       "invalidLength": "Zpráva je prázdná nebo příliš dlouhá. Zkraťte ji prosím a zkuste to znovu.",
       "injectionBlocked": "Zpráva vypadá jako pokus o obejití pokynů, proto nebyla odeslána. Přeformulujte ji prosím.",
-      "streamFailed": "Mifos X Copilot je nedostupný. Zkuste to prosím znovu."
+      "streamFailed": "Butagasi Sacco Copilot je nedostupný. Zkuste to prosím znovu."
     },
     "confirm": {
       "reference": "Reference",
       "pendingAnnouncement": "Před provedením akce zkontrolujte údaje."
     },
-    "assistantAvatarAlt": "Mifos X Copilot",
+    "assistantAvatarAlt": "Butagasi Sacco Copilot",
     "cardLabels": {
       "activationDate": "Datum aktivace",
       "activeLoans": "Aktivní úvěry",
@@ -6604,12 +6604,12 @@
       "share": "Sdílet"
     },
     "export": {
-      "heading": "Odpověď asistenta Mifos Copilot",
+      "heading": "Odpověď asistenta Butagasi Sacco Copilot",
       "question": "Dotaz",
       "client": "Klient",
       "askedBy": "Dotaz zadal(a)",
-      "disclaimer": "Vygenerováno asistentem Mifos Copilot ze záznamů ve Fineractu. Před rozhodnutím ověřte proti zdrojovému záznamu.",
-      "shareTitle": "Odpověď asistenta Mifos Copilot",
+      "disclaimer": "Vygenerováno asistentem Butagasi Sacco Copilot ze záznamů ve Fineractu. Před rozhodnutím ověřte proti zdrojovému záznamu.",
+      "shareTitle": "Odpověď asistenta Butagasi Sacco Copilot",
       "copiedToClipboard": "Odpověď a odkaz zkopírovány do schránky",
       "failed": "Soubor se nepodařilo vytvořit. Zkuste to prosím znovu.",
       "fileNameFallback": "copilot",
