@@ -908,7 +908,9 @@ export class ManageDashboardsComponent implements OnInit, AfterViewInit, OnDestr
       this.businessTrendChart.data.datasets[2].label = `${this.translate.instant('labels.heading.Repayments Received') || 'Repayments Received'} (UGX)`;
 
       // ponytail: no monthly flow endpoint in Fineract; empty until wired to a report
-      this.businessTrendChart.data.datasets.forEach((ds: any) => (ds.data = []));
+      this.businessTrendChart.data.datasets.forEach((ds: any) => {
+        ds.data = [];
+      });
       this.businessTrendChart.update();
     }
   }
